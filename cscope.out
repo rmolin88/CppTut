@@ -1,0 +1,16768 @@
+cscope 15 $HOME/Documents/CppTut               0000083105
+	@include/myball.h
+
+1 #iâdeà
+_GAME_HPP_
+
+
+2 
+	#_GAME_HPP_
+
+
+	)
+
+4 
+	~<SFML/G¿phics.hµ
+>
+
+6 
+	#WINDOW_WIDTH
+ 800
+
+	)
+
+7 
+	#WINDOW_HEIGHT
+ 600
+
+	)
+
+9 şas 
+	cb®l
+
+
+11 
+	mpublic
+:
+
+12 
+sf
+::
+CœşeSh­e
+ 
+sh­e_
+;
+
+13 
+	msf
+::
+VeùÜ2f
+ 
+v2f_pos™iÚ_
+;
+
+14 
+	msf
+::
+VeùÜ2f
+ 
+v2f_move_off£t_
+;
+
+16 
+	$b®l
+()
+
+18 
+sh­e_
+.
+	`£tRadius
+(8);
+
+19 
+sh­e_
+.
+	`£tFlCŞÜ
+(
+sf
+::
+CŞÜ
+::
+Red
+);
+
+20 
+sh­e_
+.
+	`£tOrigš
+(
+WINDOW_WIDTH
+/2, 
+WINDOW_HEIGHT
+/2);
+
+22 
+	}
+};
+
+24 şas 
+	cDebug
+
+
+26 
+	mpublic
+:
+
+27 
+FILE
+ *
+pFe
+;
+
+28 
+	m”r
+[256];
+
+30 
+	$Debug
+(*
+pFeName
+)
+
+31 : 
+	`pFe
+(
+	`fİ’
+(
+pFeName
+, "w+")
+
+33 
+	}
+};
+
+35 şas 
+	cGame
+ {
+
+36 
+	mpublic
+:
+
+37 
+b®l
+ 
+B®l
+;
+
+38 
+Debug
+ 
+	mdebug
+;
+
+39 
+	msf
+::
+Ev’t
+ 
+ev’t
+;
+
+40 
+	msf
+::
+R’d”Wšdow
+ 
+wšdow
+;
+
+42 
+Game
+();
+
+45 
+	gGame
+::
+	$Game
+():
+
+46 
+	`wšdow
+(
+sf
+::
+	`VideoMode
+(
+WINDOW_WIDTH
+, 
+WINDOW_HEIGHT
+), "Awesome Game")
+
+48 
+wšdow
+.
+	`£tF¿m”©eLim™
+(60);
+
+49 
+	}
+}
+
+51 
+	gDebug
+::
+LogEv’t
+(*
+pText
+);
+
+	@src/myball.cpp
+
+6 
+	~"myb®l.h
+"
+
+8 
+	$maš
+(
+¬gc
+, cÚ¡* 
+¬gv
+[])
+
+11 
+buff
+[128];
+
+12 
+boŞ
+ 
+escKeyP»s£d
+;
+
+13 
+Game
+ 
+myGame
+;
+
+15 
+Œy
+
+
+17 
+myGame
+.
+wšdow
+.
+	`isO³n
+())
+
+20 
+myGame
+.
+wšdow
+.
+	`pŞlEv’t
+(myGame.
+ev’t
+))
+
+22 
+escKeyP»s£d
+ = ((
+myGame
+.
+ev’t
+.
+ty³
+ =ğ
+sf
+::
+Ev’t
+::
+KeyP»s£d
+)&
+
+23 (
+myGame
+.
+ev’t
+.
+key
+.
+code
+ =ğ
+sf
+::
+Keybßrd
+::
+Esÿ³
+));
+
+24 iàĞ(
+myGame
+.
+ev’t
+.
+ty³
+ =ğ
+sf
+::
+Ev’t
+::
+Clo£d
+ ) || (
+escKeyP»s£d
+) )
+
+25 
+myGame
+.
+wšdow
+.
+	`şo£
+();
+
+27 
+myGame
+.
+wšdow
+.
+	`ş—r
+(
+sf
+::
+CŞÜ
+::
+Red
+);
+
+28 
+myGame
+.
+wšdow
+.
+	`di¥Ïy
+();
+
+31 
+	`ÿtch
+ (...)
+
+33 ià(
+myGame
+.
+pFe
+)
+
+35 
+	`¥rštf
+(
+buff
+, "Exception main()");
+
+36 
+	`åuts
+(
+buff
+, 
+myGame
+.
+pFe
+);
+
+37 
+	`fşo£
+(
+myGame
+.
+pFe
+);
+
+43 
+	}
+}
+
+	@/usr/include/SFML/Graphics.hpp
+
+25 #iâdeà
+SFML_GRAPHICS_HPP
+
+
+26 
+	#SFML_GRAPHICS_HPP
+
+
+	)
+
+32 
+	~<SFML/Wšdow.hµ
+>
+
+33 
+	~<SFML/G¿phics/BËndMode.hµ
+>
+
+34 
+	~<SFML/G¿phics/CŞÜ.hµ
+>
+
+35 
+	~<SFML/G¿phics/FÚt.hµ
+>
+
+36 
+	~<SFML/G¿phics/Glyph.hµ
+>
+
+37 
+	~<SFML/G¿phics/Image.hµ
+>
+
+38 
+	~<SFML/G¿phics/R’d”S‹s.hµ
+>
+
+39 
+	~<SFML/G¿phics/R’d”Textu».hµ
+>
+
+40 
+	~<SFML/G¿phics/R’d”Wšdow.hµ
+>
+
+41 
+	~<SFML/G¿phics/Shad”.hµ
+>
+
+42 
+	~<SFML/G¿phics/Sh­e.hµ
+>
+
+43 
+	~<SFML/G¿phics/CœşeSh­e.hµ
+>
+
+44 
+	~<SFML/G¿phics/ReùªgËSh­e.hµ
+>
+
+45 
+	~<SFML/G¿phics/CÚvexSh­e.hµ
+>
+
+46 
+	~<SFML/G¿phics/S´™e.hµ
+>
+
+47 
+	~<SFML/G¿phics/Text.hµ
+>
+
+48 
+	~<SFML/G¿phics/Textu».hµ
+>
+
+49 
+	~<SFML/G¿phics/T¿nsfÜm.hµ
+>
+
+50 
+	~<SFML/G¿phics/V”‹x.hµ
+>
+
+51 
+	~<SFML/G¿phics/V”‹xA¼ay.hµ
+>
+
+52 
+	~<SFML/G¿phics/V›w.hµ
+>
+
+	@/usr/include/SFML/Graphics/BlendMode.hpp
+
+25 #iâdeà
+SFML_BLENDMODE_HPP
+
+
+26 
+	#SFML_BLENDMODE_HPP
+
+
+	)
+
+28 
+Çme¥aû
+ 
+	gsf
+
+
+35 
+	eBËndMode
+
+
+37 
+	gBËndAÍha
+,
+
+38 
+	gBËndAdd
+,
+
+39 
+	gBËndMuÉly
+,
+
+40 
+	gBËndNÚe
+
+
+	@/usr/include/SFML/Graphics/CircleShape.hpp
+
+25 #iâdeà
+SFML_CIRCLESHAPE_HPP
+
+
+26 
+	#SFML_CIRCLESHAPE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Sh­e.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_GRAPHICS_API
+ 
+	gCœşeSh­e
+ : 
+public
+ 
+Sh­e
+
+
+43 
+public
+ :
+
+52 
+ex¶ic™
+ 
+CœşeSh­e
+(
+¿dius
+ = 0, 
+poštCouÁ
+ = 30);
+
+62 
+£tRadius
+(
+¿dius
+);
+
+72 
+g‘Radius
+() const;
+
+82 
+£tPoštCouÁ
+(
+couÁ
+);
+
+92 
+vœtu®
+ 
+g‘PoštCouÁ
+() const;
+
+104 
+vœtu®
+ 
+VeùÜ2f
+ 
+g‘Pošt
+(
+šdex
+) const;
+
+106 
+	g´iv©e
+ :
+
+111 
+m_¿dius
+;
+
+112 
+	gm_poštCouÁ
+;
+
+	@/usr/include/SFML/Graphics/Color.hpp
+
+25 #iâdeà
+SFML_COLOR_HPP
+
+
+26 
+	#SFML_COLOR_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 şas 
+	cSFML_GRAPHICS_API
+ 
+	gCŞÜ
+
+
+42 
+	gpublic
+ :
+
+51 
+CŞÜ
+();
+
+62 
+CŞÜ
+(
+Ušt8
+ 
+»d
+, Ušt8 
+g»’
+, Ušt8 
+blue
+, Ušt8 
+®pha
+ = 255);
+
+67 cÚ¡ 
+CŞÜ
+ 
+	gBÏck
+;
+
+68 cÚ¡ 
+CŞÜ
+ 
+	gWh™e
+;
+
+69 cÚ¡ 
+CŞÜ
+ 
+	gRed
+;
+
+70 cÚ¡ 
+CŞÜ
+ 
+	gG»’
+;
+
+71 cÚ¡ 
+CŞÜ
+ 
+	gBlue
+;
+
+72 cÚ¡ 
+CŞÜ
+ 
+	gY–low
+;
+
+73 cÚ¡ 
+CŞÜ
+ 
+	gMag’
+;
+
+74 cÚ¡ 
+CŞÜ
+ 
+	gCyª
+;
+
+75 cÚ¡ 
+CŞÜ
+ 
+	gT¿n¥¬’t
+;
+
+80 
+Ušt8
+ 
+	gr
+;
+
+81 
+Ušt8
+ 
+	gg
+;
+
+82 
+Ušt8
+ 
+	gb
+;
+
+83 
+Ušt8
+ 
+	ga
+;
+
+98 
+SFML_GRAPHICS_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+CŞÜ
+& 
+Ëá
+, cÚ¡ 
+	gCŞÜ
+& 
+	gright
+);
+
+112 
+SFML_GRAPHICS_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+CŞÜ
+& 
+Ëá
+, cÚ¡ 
+	gCŞÜ
+& 
+	gright
+);
+
+127 
+SFML_GRAPHICS_API
+ 
+CŞÜ
+ 
+	gİ”©Ü
+ +(cÚ¡ 
+	gCŞÜ
+& 
+	gËá
+, cÚ¡ CŞÜ& 
+	gright
+);
+
+144 
+SFML_GRAPHICS_API
+ 
+CŞÜ
+ 
+	gİ”©Ü
+ *(cÚ¡ 
+	gCŞÜ
+& 
+	gËá
+, cÚ¡ CŞÜ& 
+	gright
+);
+
+160 
+SFML_GRAPHICS_API
+ 
+	gCŞÜ
+& 
+	gİ”©Ü
+ +=(
+CŞÜ
+& 
+Ëá
+, cÚ¡ CŞÜ& 
+	gright
+);
+
+178 
+SFML_GRAPHICS_API
+ 
+	gCŞÜ
+& 
+	gİ”©Ü
+ *=(
+CŞÜ
+& 
+Ëá
+, cÚ¡ CŞÜ& 
+	gright
+);
+
+	@/usr/include/SFML/Graphics/ConvexShape.hpp
+
+25 #iâdeà
+SFML_CONVEXSHAPE_HPP
+
+
+26 
+	#SFML_CONVEXSHAPE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Sh­e.hµ
+>
+
+33 
+	~<veùÜ
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+42 şas 
+	cSFML_GRAPHICS_API
+ 
+	gCÚvexSh­e
+ : 
+public
+ 
+Sh­e
+
+
+44 
+public
+ :
+
+52 
+ex¶ic™
+ 
+CÚvexSh­e
+(
+poštCouÁ
+ = 0);
+
+64 
+£tPoštCouÁ
+(
+couÁ
+);
+
+74 
+vœtu®
+ 
+g‘PoštCouÁ
+() const;
+
+91 
+£tPošt
+(
+šdex
+, cÚ¡ 
+VeùÜ2f
+& 
+pošt
+);
+
+105 
+vœtu®
+ 
+VeùÜ2f
+ 
+g‘Pošt
+(
+šdex
+) const;
+
+107 
+	g´iv©e
+ :
+
+112 
+¡d
+::
+veùÜ
+<
+VeùÜ2f
+> 
+m_pošts
+;
+
+	@/usr/include/SFML/Graphics/Font.hpp
+
+25 #iâdeà
+SFML_FONT_HPP
+
+
+26 
+	#SFML_FONT_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Glyph.hµ
+>
+
+33 
+	~<SFML/G¿phics/Textu».hµ
+>
+
+34 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+35 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+36 
+	~<SFML/Sy¡em/SŒšg.hµ
+>
+
+37 
+	~<m­
+>
+
+38 
+	~<¡ršg
+>
+
+39 
+	~<veùÜ
+>
+
+42 
+Çme¥aû
+ 
+	gsf
+
+
+44 
+şass
+ 
+	gIÅutSŒ—m
+;
+
+50 şas 
+	cSFML_GRAPHICS_API
+ 
+	gFÚt
+
+
+52 
+	gpublic
+ :
+
+60 
+FÚt
+();
+
+68 
+FÚt
+(cÚ¡ FÚt& 
+cİy
+);
+
+76 ~
+FÚt
+();
+
+94 
+boŞ
+ 
+lßdFromFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+f’ame
+);
+
+113 
+boŞ
+ 
+lßdFromMemÜy
+(cÚ¡ * 
+d©a
+, 
+¡d
+::
+size_t
+ 
+sizeInBy‹s
+);
+
+131 
+boŞ
+ 
+lßdFromSŒ—m
+(
+IÅutSŒ—m
+& 
+¡»am
+);
+
+143 cÚ¡ 
+	gGlyph
+& 
+g‘Glyph
+(
+Ušt32
+ 
+codePošt
+, 
+ch¬aù”Size
+, 
+boŞ
+ 
+bŞd
+) const;
+
+161 
+g‘K”nšg
+(
+Ušt32
+ 
+fœ¡
+, Ušt32 
+£cÚd
+, 
+ch¬aù”Size
+) const;
+
+174 
+g‘LšeS·cšg
+(
+ch¬aù”Size
+) const;
+
+188 cÚ¡ 
+	gTextu»
+& 
+g‘Textu»
+(
+ch¬aù”Size
+) const;
+
+198 
+	gFÚt
+& 
+	gİ”©Ü
+ =(cÚ¡ 
+FÚt
+& 
+right
+);
+
+200 
+	g´iv©e
+ :
+
+206 
+	sRow
+
+
+208 
+Row
+(
+rowTİ
+, 
+rowHeight
+è: 
+width
+(0), 
+tİ
+ÔowTİ), 
+height
+(rowHeight) {}
+
+210 
+	gwidth
+;
+
+211 
+	gtİ
+;
+
+212 
+	gheight
+;
+
+218 
+	g¡d
+::
+	tm­
+<
+	tUšt32
+, 
+	tGlyph
+> 
+	tGlyphTabË
+;
+
+224 
+	sPage
+
+
+226 
+Page
+();
+
+228 
+GlyphTabË
+ 
+	gglyphs
+;
+
+229 
+	gsf
+::
+Textu»
+ 
+‹xtu»
+;
+
+230 
+	gÃxtRow
+;
+
+231 
+	g¡d
+::
+veùÜ
+<
+Row
+> 
+rows
+;
+
+238 
+ş—nup
+();
+
+250 
+Glyph
+ 
+lßdGlyph
+(
+Ušt32
+ 
+codePošt
+, 
+ch¬aù”Size
+, 
+boŞ
+ 
+bŞd
+) const;
+
+262 
+IÁReù
+ 
+fšdGlyphReù
+(
+Page
+& 
+·ge
+, 
+width
+, 
+height
+) const;
+
+272 
+boŞ
+ 
+£tCu¼’tSize
+(
+ch¬aù”Size
+) const;
+
+277 
+	g¡d
+::
+	tm­
+<, 
+	tPage
+> 
+	tPageTabË
+;
+
+282 * 
+	gm_lib¿ry
+;
+
+283 * 
+	gm_çû
+;
+
+284 * 
+	gm_¡»amRec
+;
+
+285 * 
+	gm_»fCouÁ
+;
+
+286 
+mubË
+ 
+PageTabË
+ 
+	gm_·ges
+;
+
+287 
+mubË
+ 
+	g¡d
+::
+veùÜ
+<
+Ušt8
+> 
+m_pix–Bufãr
+;
+
+	@/usr/include/SFML/Graphics/Glyph.hpp
+
+25 #iâdeà
+SFML_GLYPH_HPP
+
+
+26 
+	#SFML_GLYPH_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_GRAPHICS_API
+ 
+	gGlyph
+
+
+43 
+	gpublic
+ :
+
+49 
+Glyph
+(è: 
+advªû
+(0) {}
+
+54 
+advªû
+;
+
+55 
+IÁReù
+ 
+	gbounds
+;
+
+56 
+IÁReù
+ 
+	g‹xtu»Reù
+;
+
+	@/usr/include/SFML/Graphics/Image.hpp
+
+25 #iâdeà
+SFML_IMAGE_HPP
+
+
+26 
+	#SFML_IMAGE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/CŞÜ.hµ
+>
+
+33 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+34 
+	~<¡ršg
+>
+
+35 
+	~<veùÜ
+>
+
+38 
+Çme¥aû
+ 
+	gsf
+
+
+40 
+şass
+ 
+	gIÅutSŒ—m
+;
+
+46 şas 
+	cSFML_GRAPHICS_API
+ 
+	gImage
+
+
+48 
+	gpublic
+ :
+
+56 
+Image
+();
+
+66 
+ü—‹
+(
+width
+, 
+height
+, cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+ = Color(0, 0, 0));
+
+81 
+ü—‹
+(
+width
+, 
+height
+, cÚ¡ 
+Ušt8
+* 
+pix–s
+);
+
+98 
+boŞ
+ 
+lßdFromFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+f’ame
+);
+
+116 
+boŞ
+ 
+lßdFromMemÜy
+(cÚ¡ * 
+d©a
+, 
+¡d
+::
+size_t
+ 
+size
+);
+
+133 
+boŞ
+ 
+lßdFromSŒ—m
+(
+IÅutSŒ—m
+& 
+¡»am
+);
+
+150 
+boŞ
+ 
+§veToFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+f’ame
+) const;
+
+158 
+VeùÜ2u
+ 
+g‘Size
+() const;
+
+171 
+ü—‹MaskFromCŞÜ
+(cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+, 
+Ušt8
+ 
+®pha
+ = 0);
+
+193 
+cİy
+(cÚ¡ 
+Image
+& 
+sourû
+, 
+de¡X
+, 
+de¡Y
+, cÚ¡ 
+IÁReù
+& 
+sourûReù
+ = IÁReù(0, 0, 0, 0), 
+boŞ
+ 
+­¶yAÍha
+ = 
+çl£
+);
+
+209 
+£tPix–
+(
+x
+, 
+y
+, cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+);
+
+226 
+CŞÜ
+ 
+g‘Pix–
+(
+x
+, 
+y
+) const;
+
+241 cÚ¡ 
+Ušt8
+* 
+g‘Pix–sPŒ
+() const;
+
+247 
+æHÜizÚÎy
+();
+
+253 
+æV”tiÿÎy
+();
+
+255 
+	g´iv©e
+ :
+
+260 
+VeùÜ2u
+ 
+m_size
+;
+
+261 
+	g¡d
+::
+veùÜ
+<
+Ušt8
+> 
+m_pix–s
+;
+
+	@/usr/include/SFML/Graphics/RectangleShape.hpp
+
+25 #iâdeà
+SFML_RECTANGLESHAPE_HPP
+
+
+26 
+	#SFML_RECTANGLESHAPE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Sh­e.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_GRAPHICS_API
+ 
+	gReùªgËSh­e
+ : 
+public
+ 
+Sh­e
+
+
+43 
+public
+ :
+
+51 
+ex¶ic™
+ 
+ReùªgËSh­e
+(cÚ¡ 
+VeùÜ2f
+& 
+size
+ = Vector2f(0, 0));
+
+61 
+£tSize
+(cÚ¡ 
+VeùÜ2f
+& 
+size
+);
+
+71 cÚ¡ 
+	gVeùÜ2f
+& 
+g‘Size
+() const;
+
+79 
+vœtu®
+ 
+g‘PoštCouÁ
+() const;
+
+91 
+vœtu®
+ 
+VeùÜ2f
+ 
+g‘Pošt
+(
+šdex
+) const;
+
+93 
+	g´iv©e
+ :
+
+98 
+VeùÜ2f
+ 
+m_size
+;
+
+	@/usr/include/SFML/Graphics/RenderStates.hpp
+
+25 #iâdeà
+SFML_RENDERSTATES_HPP
+
+
+26 
+	#SFML_RENDERSTATES_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/BËndMode.hµ
+>
+
+33 
+	~<SFML/G¿phics/T¿nsfÜm.hµ
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+38 
+şass
+ 
+	gShad”
+;
+
+39 
+şass
+ 
+	gTextu»
+;
+
+45 şas 
+	cSFML_GRAPHICS_API
+ 
+	gR’d”S‹s
+
+
+47 
+	gpublic
+ :
+
+61 
+R’d”S‹s
+();
+
+69 
+R’d”S‹s
+(
+BËndMode
+ 
+theBËndMode
+);
+
+77 
+R’d”S‹s
+(cÚ¡ 
+T¿nsfÜm
+& 
+theT¿nsfÜm
+);
+
+85 
+R’d”S‹s
+(cÚ¡ 
+Textu»
+* 
+theTextu»
+);
+
+93 
+R’d”S‹s
+(cÚ¡ 
+Shad”
+* 
+theShad”
+);
+
+104 
+R’d”S‹s
+(
+BËndMode
+ 
+theBËndMode
+, cÚ¡ 
+T¿nsfÜm
+& 
+theT¿nsfÜm
+,
+
+105 cÚ¡ 
+Textu»
+* 
+theTextu»
+, cÚ¡ 
+Shad”
+* 
+theShad”
+);
+
+110 cÚ¡ 
+R’d”S‹s
+ 
+	gDeçuÉ
+;
+
+115 
+BËndMode
+ 
+	gbËndMode
+;
+
+116 
+T¿nsfÜm
+ 
+	gŒªsfÜm
+;
+
+117 cÚ¡ 
+Textu»
+* 
+	g‹xtu»
+;
+
+118 cÚ¡ 
+Shad”
+* 
+	gshad”
+;
+
+	@/usr/include/SFML/Graphics/RenderTexture.hpp
+
+25 #iâdeà
+SFML_RENDERTEXTURE_HPP
+
+
+26 
+	#SFML_RENDERTEXTURE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Textu».hµ
+>
+
+33 
+	~<SFML/G¿phics/R’d”T¬g‘.hµ
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+38 
+Çme¥aû
+ 
+	g´iv
+
+
+40 
+şass
+ 
+	gR’d”Textu»Im¶
+;
+
+47 şas 
+	cSFML_GRAPHICS_API
+ 
+	gR’d”Textu»
+ : 
+public
+ 
+R’d”T¬g‘
+
+
+49 
+public
+ :
+
+60 
+R’d”Textu»
+();
+
+66 
+	gvœtu®
+ ~
+R’d”Textu»
+();
+
+86 
+boŞ
+ 
+ü—‹
+(
+width
+, 
+height
+, boŞ 
+d•thBufãr
+ = 
+çl£
+);
+
+99 
+£tSmoÙh
+(
+boŞ
+ 
+smoÙh
+);
+
+109 
+boŞ
+ 
+isSmoÙh
+() const;
+
+122 
+£tR•—‹d
+(
+boŞ
+ 
+»³©ed
+);
+
+132 
+boŞ
+ 
+isR•—‹d
+() const;
+
+149 
+boŞ
+ 
+£tAùive
+(boŞ 
+aùive
+ = 
+Œue
+);
+
+160 
+di¥Ïy
+();
+
+171 
+vœtu®
+ 
+VeùÜ2u
+ 
+g‘Size
+() const;
+
+187 cÚ¡ 
+	gTextu»
+& 
+g‘Textu»
+() const;
+
+189 
+	g´iv©e
+ :
+
+202 
+vœtu®
+ 
+boŞ
+ 
+aùiv©e
+(boŞ 
+aùive
+);
+
+207 
+	g´iv
+::
+R’d”Textu»Im¶
+* 
+m_im¶
+;
+
+208 
+Textu»
+ 
+	gm_‹xtu»
+;
+
+	@/usr/include/SFML/Graphics/RenderWindow.hpp
+
+25 #iâdeà
+SFML_RENDERWINDOW_HPP
+
+
+26 
+	#SFML_RENDERWINDOW_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/R’d”T¬g‘.hµ
+>
+
+33 
+	~<SFML/G¿phics/Image.hµ
+>
+
+34 
+	~<SFML/Wšdow/Wšdow.hµ
+>
+
+35 
+	~<¡ršg
+>
+
+38 
+Çme¥aû
+ 
+	gsf
+
+
+44 
+şass
+ 
+SFML_GRAPHICS_API
+ 
+	gR’d”Wšdow
+ : 
+public
+ 
+Wšdow
+,…ubliø
+	gR’d”T¬g‘
+
+
+46 
+	gpublic
+ :
+
+55 
+R’d”Wšdow
+();
+
+76 
+R’d”Wšdow
+(
+VideoMode
+ 
+mode
+, cÚ¡ 
+SŒšg
+& 
+t™Ë
+, 
+Ušt32
+ 
+¡yË
+ = 
+StyË
+::
+DeçuÉ
+, cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+ = ContextSettings());
+
+93 
+ex¶ic™
+ 
+R’d”Wšdow
+(
+WšdowHªdË
+ 
+hªdË
+, cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+ = ContextSettings());
+
+101 
+	gvœtu®
+ ~
+R’d”Wšdow
+();
+
+112 
+vœtu®
+ 
+VeùÜ2u
+ 
+g‘Size
+() const;
+
+128 
+Image
+ 
+ÿ±u»
+() const;
+
+130 
+	g´Ùeùed
+:
+
+140 
+vœtu®
+ 
+ÚC»©e
+();
+
+149 
+vœtu®
+ 
+ÚResize
+();
+
+151 
+	g´iv©e
+ :
+
+161 
+vœtu®
+ 
+boŞ
+ 
+aùiv©e
+(boŞ 
+aùive
+);
+
+	@/usr/include/SFML/Graphics/Shader.hpp
+
+25 #iâdeà
+SFML_SHADER_HPP
+
+
+26 
+	#SFML_SHADER_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/T¿nsfÜm.hµ
+>
+
+33 
+	~<SFML/G¿phics/CŞÜ.hµ
+>
+
+34 
+	~<SFML/Wšdow/GlResourû.hµ
+>
+
+35 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+36 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+37 
+	~<SFML/Sy¡em/VeùÜ3.hµ
+>
+
+38 
+	~<m­
+>
+
+39 
+	~<¡ršg
+>
+
+42 
+Çme¥aû
+ 
+	gsf
+
+
+44 
+şass
+ 
+	gIÅutSŒ—m
+;
+
+45 
+şass
+ 
+	gTextu»
+;
+
+51 
+şass
+ 
+SFML_GRAPHICS_API
+ 
+	gShad”
+ : 
+GlResourû
+, 
+	gNÚCİyabË
+
+
+53 
+	gpublic
+ :
+
+59 
+	eTy³
+
+
+61 
+V”‹x
+,
+
+62 
+	gF¿gm’t
+
+
+70 
+	sCu¼’tTextu»Ty³
+ {};
+
+71 
+Cu¼’tTextu»Ty³
+ 
+	gCu¼’tTextu»
+;
+
+73 
+	gpublic
+ :
+
+81 
+Shad”
+();
+
+87 ~
+Shad”
+();
+
+108 
+boŞ
+ 
+lßdFromFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+f’ame
+, 
+Ty³
+ 
+ty³
+);
+
+129 
+boŞ
+ 
+lßdFromFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+v”‹xShad”F’ame
+, cÚ¡ std::¡ršg& 
+äagm’tShad”F’ame
+);
+
+149 
+boŞ
+ 
+lßdFromMemÜy
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+shad”
+, 
+Ty³
+ 
+ty³
+);
+
+170 
+boŞ
+ 
+lßdFromMemÜy
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+v”‹xShad”
+, cÚ¡ std::¡ršg& 
+äagm’tShad”
+);
+
+190 
+boŞ
+ 
+lßdFromSŒ—m
+(
+IÅutSŒ—m
+& 
+¡»am
+, 
+Ty³
+ 
+ty³
+);
+
+211 
+boŞ
+ 
+lßdFromSŒ—m
+(
+IÅutSŒ—m
+& 
+v”‹xShad”SŒ—m
+, IÅutSŒ—m& 
+äagm’tShad”SŒ—m
+);
+
+232 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, 
+x
+);
+
+254 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, 
+x
+, 
+y
+);
+
+277 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, 
+x
+, 
+y
+, 
+z
+);
+
+301 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, 
+x
+, 
+y
+, 
+z
+, 
+w
+);
+
+322 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ 
+VeùÜ2f
+& 
+veùÜ
+);
+
+343 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ 
+VeùÜ3f
+& 
+veùÜ
+);
+
+370 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+);
+
+393 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ 
+sf
+::
+T¿nsfÜm
+& 
+ŒªsfÜm
+);
+
+425 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, cÚ¡ 
+Textu»
+& 
+‹xtu»
+);
+
+448 
+£tP¬am‘”
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+, 
+Cu¼’tTextu»Ty³
+);
+
+471 
+bšd
+(cÚ¡ 
+Shad”
+* 
+shad”
+);
+
+483 
+boŞ
+ 
+isAvaabË
+();
+
+485 
+	g´iv©e
+ :
+
+499 
+boŞ
+ 
+compe
+(cÚ¡ * 
+v”‹xShad”Code
+, cÚ¡ * 
+äagm’tShad”Code
+);
+
+508 
+bšdTextu»s
+() const;
+
+518 
+g‘P¬amLoÿtiÚ
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+Çme
+);
+
+523 
+	g¡d
+::
+	tm­
+<, cÚ¡ 
+	tTextu»
+*> 
+	tTextu»TabË
+;
+
+524 
+	g¡d
+::
+	tm­
+<
+	t¡d
+::
+	t¡ršg
+, > 
+	tP¬amTabË
+;
+
+529 
+	gm_shad”Prog¿m
+;
+
+530 
+	gm_cu¼’tTextu»
+;
+
+531 
+Textu»TabË
+ 
+	gm_‹xtu»s
+;
+
+532 
+P¬amTabË
+ 
+	gm_·¿ms
+;
+
+	@/usr/include/SFML/Graphics/Shape.hpp
+
+25 #iâdeà
+SFML_SHAPE_HPP
+
+
+26 
+	#SFML_SHAPE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/D¿wabË.hµ
+>
+
+33 
+	~<SFML/G¿phics/T¿nsfÜmabË.hµ
+>
+
+34 
+	~<SFML/G¿phics/V”‹xA¼ay.hµ
+>
+
+35 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+38 
+Çme¥aû
+ 
+	gsf
+
+
+44 
+şass
+ 
+SFML_GRAPHICS_API
+ 
+	gSh­e
+ : 
+public
+ 
+D¿wabË
+,…ubliø
+	gT¿nsfÜmabË
+
+
+46 
+	gpublic
+ :
+
+52 
+vœtu®
+ ~
+Sh­e
+();
+
+74 
+£tTextu»
+(cÚ¡ 
+Textu»
+* 
+‹xtu»
+, 
+boŞ
+ 
+»£tReù
+ = 
+çl£
+);
+
+88 
+£tTextu»Reù
+(cÚ¡ 
+IÁReù
+& 
+»ù
+);
+
+105 
+£tFlCŞÜ
+(cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+);
+
+117 
+£tOušeCŞÜ
+(cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+);
+
+132 
+£tOušeThickÃss
+(
+thickÃss
+);
+
+146 cÚ¡ 
+Textu»
+* 
+g‘Textu»
+() const;
+
+156 cÚ¡ 
+	gIÁReù
+& 
+g‘Textu»Reù
+() const;
+
+166 cÚ¡ 
+	gCŞÜ
+& 
+g‘FlCŞÜ
+() const;
+
+176 cÚ¡ 
+	gCŞÜ
+& 
+g‘OušeCŞÜ
+() const;
+
+186 
+g‘OušeThickÃss
+() const;
+
+196 
+vœtu®
+ 
+g‘PoštCouÁ
+() const = 0;
+
+210 
+vœtu®
+ 
+VeùÜ2f
+ 
+g‘Pošt
+(
+šdex
+) const = 0;
+
+224 
+FlßtReù
+ 
+g‘LoÿlBounds
+() const;
+
+238 
+FlßtReù
+ 
+g‘Glob®Bounds
+() const;
+
+240 
+	g´Ùeùed
+ :
+
+246 
+Sh­e
+();
+
+256 
+upd©e
+();
+
+258 
+	g´iv©e
+ :
+
+267 
+vœtu®
+ 
+d¿w
+(
+R’d”T¬g‘
+& 
+rg‘
+, 
+R’d”S‹s
+ 
+¡©es
+) const;
+
+273 
+upd©eFlCŞÜs
+();
+
+279 
+upd©eTexCoÜds
+();
+
+285 
+upd©eOuše
+();
+
+291 
+upd©eOušeCŞÜs
+();
+
+293 
+	g´iv©e
+ :
+
+298 cÚ¡ 
+Textu»
+* 
+m_‹xtu»
+;
+
+299 
+IÁReù
+ 
+	gm_‹xtu»Reù
+;
+
+300 
+CŞÜ
+ 
+	gm_flCŞÜ
+;
+
+301 
+CŞÜ
+ 
+	gm_oušeCŞÜ
+;
+
+302 
+	gm_oušeThickÃss
+;
+
+303 
+V”‹xA¼ay
+ 
+	gm_v”tiûs
+;
+
+304 
+V”‹xA¼ay
+ 
+	gm_oušeV”tiûs
+;
+
+305 
+FlßtReù
+ 
+	gm_šsideBounds
+;
+
+306 
+FlßtReù
+ 
+	gm_bounds
+;
+
+	@/usr/include/SFML/Graphics/Sprite.hpp
+
+25 #iâdeà
+SFML_SPRITE_HPP
+
+
+26 
+	#SFML_SPRITE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/D¿wabË.hµ
+>
+
+33 
+	~<SFML/G¿phics/T¿nsfÜmabË.hµ
+>
+
+34 
+	~<SFML/G¿phics/V”‹x.hµ
+>
+
+35 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+38 
+Çme¥aû
+ 
+	gsf
+
+
+40 
+şass
+ 
+	gTextu»
+;
+
+47 
+şass
+ 
+SFML_GRAPHICS_API
+ 
+	gS´™e
+ : 
+public
+ 
+D¿wabË
+,…ubliø
+	gT¿nsfÜmabË
+
+
+49 
+	gpublic
+ :
+
+57 
+S´™e
+();
+
+67 
+ex¶ic™
+ 
+S´™e
+(cÚ¡ 
+Textu»
+& 
+‹xtu»
+);
+
+78 
+S´™e
+(cÚ¡ 
+Textu»
+& 
+‹xtu»
+, cÚ¡ 
+IÁReù
+& 
+»ùªgË
+);
+
+99 
+£tTextu»
+(cÚ¡ 
+Textu»
+& 
+‹xtu»
+, 
+boŞ
+ 
+»£tReù
+ = 
+çl£
+);
+
+113 
+£tTextu»Reù
+(cÚ¡ 
+IÁReù
+& 
+»ùªgË
+);
+
+128 
+£tCŞÜ
+(cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+);
+
+142 cÚ¡ 
+Textu»
+* 
+g‘Textu»
+() const;
+
+152 cÚ¡ 
+	gIÁReù
+& 
+g‘Textu»Reù
+() const;
+
+162 cÚ¡ 
+	gCŞÜ
+& 
+g‘CŞÜ
+() const;
+
+176 
+FlßtReù
+ 
+g‘LoÿlBounds
+() const;
+
+190 
+FlßtReù
+ 
+g‘Glob®Bounds
+() const;
+
+192 
+	g´iv©e
+ :
+
+201 
+vœtu®
+ 
+d¿w
+(
+R’d”T¬g‘
+& 
+rg‘
+, 
+R’d”S‹s
+ 
+¡©es
+) const;
+
+207 
+upd©ePos™iÚs
+();
+
+213 
+upd©eTexCoÜds
+();
+
+218 
+V”‹x
+ 
+	gm_v”tiûs
+[4];
+
+219 cÚ¡ 
+Textu»
+* 
+	gm_‹xtu»
+;
+
+220 
+IÁReù
+ 
+	gm_‹xtu»Reù
+;
+
+	@/usr/include/SFML/Graphics/Text.hpp
+
+25 #iâdeà
+SFML_TEXT_HPP
+
+
+26 
+	#SFML_TEXT_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/D¿wabË.hµ
+>
+
+33 
+	~<SFML/G¿phics/T¿nsfÜmabË.hµ
+>
+
+34 
+	~<SFML/G¿phics/FÚt.hµ
+>
+
+35 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+36 
+	~<SFML/G¿phics/V”‹xA¼ay.hµ
+>
+
+37 
+	~<SFML/Sy¡em/SŒšg.hµ
+>
+
+38 
+	~<¡ršg
+>
+
+39 
+	~<veùÜ
+>
+
+42 
+Çme¥aû
+ 
+	gsf
+
+
+48 
+şass
+ 
+SFML_GRAPHICS_API
+ 
+	gText
+ : 
+public
+ 
+D¿wabË
+,…ubliø
+	gT¿nsfÜmabË
+
+
+50 
+	gpublic
+ :
+
+56 
+	eStyË
+
+
+58 
+ReguÏr
+ = 0,
+
+59 
+	gBŞd
+ = 1 << 0,
+
+60 
+	gIlic
+ = 1 << 1,
+
+61 
+	gUnd”lšed
+ = 1 << 2
+
+70 
+Text
+();
+
+80 
+Text
+(cÚ¡ 
+SŒšg
+& 
+¡ršg
+, cÚ¡ 
+FÚt
+& 
+fÚt
+, 
+ch¬aù”Size
+ = 30);
+
+101 
+£tSŒšg
+(cÚ¡ 
+SŒšg
+& 
+¡ršg
+);
+
+118 
+£tFÚt
+(cÚ¡ 
+FÚt
+& 
+fÚt
+);
+
+130 
+£tCh¬aù”Size
+(
+size
+);
+
+144 
+£tStyË
+(
+Ušt32
+ 
+¡yË
+);
+
+156 
+£tCŞÜ
+(cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+);
+
+175 cÚ¡ 
+	gSŒšg
+& 
+g‘SŒšg
+() const;
+
+189 cÚ¡ 
+FÚt
+* 
+g‘FÚt
+() const;
+
+199 
+g‘Ch¬aù”Size
+() const;
+
+209 
+Ušt32
+ 
+g‘StyË
+() const;
+
+219 cÚ¡ 
+	gCŞÜ
+& 
+g‘CŞÜ
+() const;
+
+236 
+VeùÜ2f
+ 
+fšdCh¬aù”Pos
+(
+¡d
+::
+size_t
+ 
+šdex
+) const;
+
+250 
+FlßtReù
+ 
+g‘LoÿlBounds
+() const;
+
+264 
+FlßtReù
+ 
+g‘Glob®Bounds
+() const;
+
+266 
+	g´iv©e
+ :
+
+275 
+vœtu®
+ 
+d¿w
+(
+R’d”T¬g‘
+& 
+rg‘
+, 
+R’d”S‹s
+ 
+¡©es
+) const;
+
+281 
+upd©eGeom‘ry
+();
+
+286 
+SŒšg
+ 
+	gm_¡ršg
+;
+
+287 cÚ¡ 
+FÚt
+* 
+	gm_fÚt
+;
+
+288 
+	gm_ch¬aù”Size
+;
+
+289 
+Ušt32
+ 
+	gm_¡yË
+;
+
+290 
+CŞÜ
+ 
+	gm_cŞÜ
+;
+
+291 
+V”‹xA¼ay
+ 
+	gm_v”tiûs
+;
+
+292 
+FlßtReù
+ 
+	gm_bounds
+;
+
+	@/usr/include/SFML/Graphics/Texture.hpp
+
+25 #iâdeà
+SFML_TEXTURE_HPP
+
+
+26 
+	#SFML_TEXTURE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Image.hµ
+>
+
+33 
+	~<SFML/Wšdow/GlResourû.hµ
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+38 
+şass
+ 
+	gWšdow
+;
+
+39 
+şass
+ 
+	gR’d”T¬g‘
+;
+
+40 
+şass
+ 
+	gR’d”Textu»
+;
+
+41 
+şass
+ 
+	gIÅutSŒ—m
+;
+
+47 şas 
+	cSFML_GRAPHICS_API
+ 
+	gTextu»
+ : 
+GlResourû
+
+
+49 
+public
+ :
+
+55 
+	eCoÜdš©eTy³
+
+
+57 
+NÜm®ized
+,
+
+58 
+	gPix–s
+
+
+61 
+	gpublic
+ :
+
+69 
+Textu»
+();
+
+77 
+Textu»
+(cÚ¡ Textu»& 
+cİy
+);
+
+83 ~
+Textu»
+();
+
+96 
+boŞ
+ 
+ü—‹
+(
+width
+, 
+height
+);
+
+127 
+boŞ
+ 
+lßdFromFe
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+f’ame
+, cÚ¡ 
+IÁReù
+& 
+¬—
+ = IntRect());
+
+159 
+boŞ
+ 
+lßdFromMemÜy
+(cÚ¡ * 
+d©a
+, 
+¡d
+::
+size_t
+ 
+size
+, cÚ¡ 
+IÁReù
+& 
+¬—
+ = IntRect());
+
+190 
+boŞ
+ 
+lßdFromSŒ—m
+(
+sf
+::
+IÅutSŒ—m
+& 
+¡»am
+, cÚ¡ 
+IÁReù
+& 
+¬—
+ = IntRect());
+
+214 
+boŞ
+ 
+lßdFromImage
+(cÚ¡ 
+Image
+& 
+image
+, cÚ¡ 
+IÁReù
+& 
+¬—
+ = IntRect());
+
+222 
+VeùÜ2u
+ 
+g‘Size
+() const;
+
+237 
+Image
+ 
+cİyToImage
+() const;
+
+255 
+upd©e
+(cÚ¡ 
+Ušt8
+* 
+pix–s
+);
+
+277 
+upd©e
+(cÚ¡ 
+Ušt8
+* 
+pix–s
+, 
+width
+, 
+height
+, 
+x
+, 
+y
+);
+
+297 
+upd©e
+(cÚ¡ 
+Image
+& 
+image
+);
+
+314 
+upd©e
+(cÚ¡ 
+Image
+& 
+image
+, 
+x
+, 
+y
+);
+
+334 
+upd©e
+(cÚ¡ 
+Wšdow
+& 
+wšdow
+);
+
+351 
+upd©e
+(cÚ¡ 
+Wšdow
+& 
+wšdow
+, 
+x
+, 
+y
+);
+
+367 
+£tSmoÙh
+(
+boŞ
+ 
+smoÙh
+);
+
+377 
+boŞ
+ 
+isSmoÙh
+() const;
+
+401 
+£tR•—‹d
+(
+boŞ
+ 
+»³©ed
+);
+
+411 
+boŞ
+ 
+isR•—‹d
+() const;
+
+421 
+	gTextu»
+& 
+	gİ”©Ü
+ =(cÚ¡ 
+Textu»
+& 
+right
+);
+
+454 
+bšd
+(cÚ¡ 
+Textu»
+* 
+‹xtu»
+, 
+CoÜdš©eTy³
+ 
+coÜdš©eTy³
+ = 
+NÜm®ized
+);
+
+466 
+g‘MaximumSize
+();
+
+468 
+	g´iv©e
+ :
+
+470 
+ä›nd
+ 
+şass
+ 
+R’d”Textu»
+;
+
+471 
+ä›nd
+ 
+şass
+ 
+	gR’d”T¬g‘
+;
+
+486 
+g‘V®idSize
+(
+size
+);
+
+491 
+VeùÜ2u
+ 
+	gm_size
+;
+
+492 
+VeùÜ2u
+ 
+	gm_aùu®Size
+;
+
+493 
+	gm_‹xtu»
+;
+
+494 
+boŞ
+ 
+	gm_isSmoÙh
+;
+
+495 
+boŞ
+ 
+	gm_isR•—‹d
+;
+
+496 
+mubË
+ 
+boŞ
+ 
+	gm_pix–sFl³d
+;
+
+497 
+Ušt64
+ 
+	gm_ÿcheId
+;
+
+	@/usr/include/SFML/Graphics/Transform.hpp
+
+25 #iâdeà
+SFML_TRANSFORM_HPP
+
+
+26 
+	#SFML_TRANSFORM_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+33 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+42 şas 
+	cSFML_GRAPHICS_API
+ 
+	gT¿nsfÜm
+
+
+44 
+	gpublic
+ :
+
+52 
+T¿nsfÜm
+();
+
+68 
+T¿nsfÜm
+(
+a00
+, 
+a01
+, 
+a02
+,
+
+69 
+a10
+, 
+a11
+, 
+a12
+,
+
+70 
+a20
+, 
+a21
+, 
+a22
+);
+
+87 cÚ¡ * 
+g‘M©rix
+() const;
+
+98 
+T¿nsfÜm
+ 
+g‘Inv”£
+() const;
+
+109 
+VeùÜ2f
+ 
+ŒªsfÜmPošt
+(
+x
+, 
+y
+) const;
+
+119 
+VeùÜ2f
+ 
+ŒªsfÜmPošt
+(cÚ¡ VeùÜ2f& 
+pošt
+) const;
+
+135 
+FlßtReù
+ 
+ŒªsfÜmReù
+(cÚ¡ FlßtReù& 
+»ùªgË
+) const;
+
+149 
+	gT¿nsfÜm
+& 
+combše
+(cÚ¡ 
+T¿nsfÜm
+& 
+ŒªsfÜm
+);
+
+169 
+	gT¿nsfÜm
+& 
+Œª¦©e
+(
+x
+, 
+y
+);
+
+188 
+	gT¿nsfÜm
+& 
+Œª¦©e
+(cÚ¡ 
+VeùÜ2f
+& 
+off£t
+);
+
+207 
+	gT¿nsfÜm
+& 
+rÙ©e
+(
+ªgË
+);
+
+233 
+	gT¿nsfÜm
+& 
+rÙ©e
+(
+ªgË
+, 
+ûÁ”X
+, 
+ûÁ”Y
+);
+
+258 
+	gT¿nsfÜm
+& 
+rÙ©e
+(
+ªgË
+, cÚ¡ 
+VeùÜ2f
+& 
+ûÁ”
+);
+
+278 
+	gT¿nsfÜm
+& 
+sÿË
+(
+sÿËX
+, 
+sÿËY
+);
+
+305 
+	gT¿nsfÜm
+& 
+sÿË
+(
+sÿËX
+, 
+sÿËY
+, 
+ûÁ”X
+, 
+ûÁ”Y
+);
+
+324 
+	gT¿nsfÜm
+& 
+sÿË
+(cÚ¡ 
+VeùÜ2f
+& 
+çùÜs
+);
+
+349 
+	gT¿nsfÜm
+& 
+sÿË
+(cÚ¡ 
+VeùÜ2f
+& 
+çùÜs
+, cÚ¡ VeùÜ2f& 
+ûÁ”
+);
+
+354 cÚ¡ 
+T¿nsfÜm
+ 
+	gId’t™y
+;
+
+356 
+	g´iv©e
+:
+
+361 
+m_m©rix
+[16];
+
+376 
+SFML_GRAPHICS_API
+ 
+T¿nsfÜm
+ 
+	gİ”©Ü
+ *(cÚ¡ 
+	gT¿nsfÜm
+& 
+	gËá
+, cÚ¡ T¿nsfÜm& 
+	gright
+);
+
+390 
+SFML_GRAPHICS_API
+ 
+	gT¿nsfÜm
+& 
+	gİ”©Ü
+ *=(
+T¿nsfÜm
+& 
+Ëá
+, cÚ¡ T¿nsfÜm& 
+	gright
+);
+
+404 
+SFML_GRAPHICS_API
+ 
+VeùÜ2f
+ 
+	gİ”©Ü
+ *(cÚ¡ 
+	gT¿nsfÜm
+& 
+	gËá
+, cÚ¡ 
+	gVeùÜ2f
+& 
+	gright
+);
+
+	@/usr/include/SFML/Graphics/Vertex.hpp
+
+25 #iâdeà
+SFML_VERTEX_HPP
+
+
+26 
+	#SFML_VERTEX_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/CŞÜ.hµ
+>
+
+33 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+42 şas 
+	cSFML_GRAPHICS_API
+ 
+	gV”‹x
+
+
+44 
+	gpublic
+ :
+
+50 
+V”‹x
+();
+
+60 
+V”‹x
+(cÚ¡ 
+VeùÜ2f
+& 
+thePos™iÚ
+);
+
+71 
+V”‹x
+(cÚ¡ 
+VeùÜ2f
+& 
+thePos™iÚ
+, cÚ¡ 
+CŞÜ
+& 
+theCŞÜ
+);
+
+82 
+V”‹x
+(cÚ¡ 
+VeùÜ2f
+& 
+thePos™iÚ
+, cÚ¡ VeùÜ2f& 
+theTexCoÜds
+);
+
+92 
+V”‹x
+(cÚ¡ 
+VeùÜ2f
+& 
+thePos™iÚ
+, cÚ¡ 
+CŞÜ
+& 
+theCŞÜ
+, cÚ¡ VeùÜ2f& 
+theTexCoÜds
+);
+
+97 
+VeùÜ2f
+ 
+	gpos™iÚ
+;
+
+98 
+CŞÜ
+ 
+	gcŞÜ
+;
+
+99 
+VeùÜ2f
+ 
+	g‹xCoÜds
+;
+
+	@/usr/include/SFML/Graphics/VertexArray.hpp
+
+25 #iâdeà
+SFML_VERTEXARRAY_HPP
+
+
+26 
+	#SFML_VERTEXARRAY_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/V”‹x.hµ
+>
+
+33 
+	~<SFML/G¿phics/Prim™iveTy³.hµ
+>
+
+34 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+35 
+	~<SFML/G¿phics/D¿wabË.hµ
+>
+
+36 
+	~<veùÜ
+>
+
+39 
+Çme¥aû
+ 
+	gsf
+
+
+45 şas 
+	cSFML_GRAPHICS_API
+ 
+	gV”‹xA¼ay
+ : 
+public
+ 
+D¿wabË
+
+
+47 
+public
+ :
+
+55 
+V”‹xA¼ay
+();
+
+64 
+ex¶ic™
+ 
+V”‹xA¼ay
+(
+Prim™iveTy³
+ 
+ty³
+, 
+v”‹xCouÁ
+ = 0);
+
+72 
+g‘V”‹xCouÁ
+() const;
+
+88 
+	gV”‹x
+& 
+	gİ”©Ü
+ [](
+	gšdex
+);
+
+104 cÚ¡ 
+	gV”‹x
+& 
+	gİ”©Ü
+ [](
+	gšdex
+) const;
+
+115 
+ş—r
+();
+
+129 
+»size
+(
+v”‹xCouÁ
+);
+
+137 
+­³nd
+(cÚ¡ 
+V”‹x
+& 
+v”‹x
+);
+
+153 
+£tPrim™iveTy³
+(
+Prim™iveTy³
+ 
+ty³
+);
+
+161 
+Prim™iveTy³
+ 
+g‘Prim™iveTy³
+() const;
+
+172 
+FlßtReù
+ 
+g‘Bounds
+() const;
+
+174 
+	g´iv©e
+ :
+
+183 
+vœtu®
+ 
+d¿w
+(
+R’d”T¬g‘
+& 
+rg‘
+, 
+R’d”S‹s
+ 
+¡©es
+) const;
+
+185 
+	g´iv©e
+:
+
+190 
+¡d
+::
+veùÜ
+<
+V”‹x
+> 
+m_v”tiûs
+;
+
+191 
+Prim™iveTy³
+ 
+	gm_´im™iveTy³
+;
+
+	@/usr/include/SFML/Graphics/View.hpp
+
+25 #iâdeà
+SFML_VIEW_HPP
+
+
+26 
+	#SFML_VIEW_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+33 
+	~<SFML/G¿phics/T¿nsfÜm.hµ
+>
+
+34 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+37 
+Çme¥aû
+ 
+	gsf
+
+
+43 şas 
+	cSFML_GRAPHICS_API
+ 
+	gV›w
+
+
+45 
+	gpublic
+ :
+
+53 
+V›w
+();
+
+61 
+ex¶ic™
+ 
+V›w
+(cÚ¡ 
+FlßtReù
+& 
+»ùªgË
+);
+
+70 
+V›w
+(cÚ¡ 
+VeùÜ2f
+& 
+ûÁ”
+, cÚ¡ VeùÜ2f& 
+size
+);
+
+81 
+£tC’‹r
+(
+x
+, 
+y
+);
+
+91 
+£tC’‹r
+(cÚ¡ 
+VeùÜ2f
+& 
+ûÁ”
+);
+
+102 
+£tSize
+(
+width
+, 
+height
+);
+
+112 
+£tSize
+(cÚ¡ 
+VeùÜ2f
+& 
+size
+);
+
+124 
+£tRÙ©iÚ
+(
+ªgË
+);
+
+141 
+£tV›wpÜt
+(cÚ¡ 
+FlßtReù
+& 
+v›wpÜt
+);
+
+153 
+»£t
+(cÚ¡ 
+FlßtReù
+& 
+»ùªgË
+);
+
+163 cÚ¡ 
+	gVeùÜ2f
+& 
+g‘C’‹r
+() const;
+
+173 cÚ¡ 
+	gVeùÜ2f
+& 
+g‘Size
+() const;
+
+183 
+g‘RÙ©iÚ
+() const;
+
+193 cÚ¡ 
+	gFlßtReù
+& 
+g‘V›wpÜt
+() const;
+
+204 
+move
+(
+off£tX
+, 
+off£tY
+);
+
+214 
+move
+(cÚ¡ 
+VeùÜ2f
+& 
+off£t
+);
+
+224 
+rÙ©e
+(
+ªgË
+);
+
+241 
+zoom
+(
+çùÜ
+);
+
+253 cÚ¡ 
+	gT¿nsfÜm
+& 
+g‘T¿nsfÜm
+() const;
+
+265 cÚ¡ 
+	gT¿nsfÜm
+& 
+g‘Inv”£T¿nsfÜm
+() const;
+
+267 
+	g´iv©e
+ :
+
+272 
+VeùÜ2f
+ 
+m_ûÁ”
+;
+
+273 
+VeùÜ2f
+ 
+	gm_size
+;
+
+274 
+	gm_rÙ©iÚ
+;
+
+275 
+FlßtReù
+ 
+	gm_v›wpÜt
+;
+
+276 
+mubË
+ 
+T¿nsfÜm
+ 
+	gm_ŒªsfÜm
+;
+
+277 
+mubË
+ 
+T¿nsfÜm
+ 
+	gm_šv”£T¿nsfÜm
+;
+
+278 
+mubË
+ 
+boŞ
+ 
+	gm_ŒªsfÜmUpd©ed
+;
+
+279 
+mubË
+ 
+boŞ
+ 
+	gm_švT¿nsfÜmUpd©ed
+;
+
+	@/usr/include/SFML/Window.hpp
+
+25 #iâdeà
+SFML_SFML_WINDOW_HPP
+
+
+26 
+	#SFML_SFML_WINDOW_HPP
+
+
+	)
+
+32 
+	~<SFML/Sy¡em.hµ
+>
+
+33 
+	~<SFML/Wšdow/CÚ‹xt.hµ
+>
+
+34 
+	~<SFML/Wšdow/CÚ‹xtS‘tšgs.hµ
+>
+
+35 
+	~<SFML/Wšdow/Ev’t.hµ
+>
+
+36 
+	~<SFML/Wšdow/Joy¡ick.hµ
+>
+
+37 
+	~<SFML/Wšdow/Keybßrd.hµ
+>
+
+38 
+	~<SFML/Wšdow/Mou£.hµ
+>
+
+39 
+	~<SFML/Wšdow/VideoMode.hµ
+>
+
+40 
+	~<SFML/Wšdow/Wšdow.hµ
+>
+
+41 
+	~<SFML/Wšdow/WšdowStyË.hµ
+>
+
+	@/usr/include/SFML/Graphics/Drawable.hpp
+
+25 #iâdeà
+SFML_DRAWABLE_HPP
+
+
+26 
+	#SFML_DRAWABLE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/R’d”S‹s.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+37 
+şass
+ 
+	gR’d”T¬g‘
+;
+
+44 şas 
+	cSFML_GRAPHICS_API
+ 
+	gD¿wabË
+
+
+46 
+	gpublic
+ :
+
+52 
+vœtu®
+ ~
+D¿wabË
+() {}
+
+54 
+´Ùeùed
+ :
+
+56 
+ä›nd
+ 
+şass
+ 
+R’d”T¬g‘
+;
+
+69 
+vœtu®
+ 
+d¿w
+(
+R’d”T¬g‘
+& 
+rg‘
+, 
+R’d”S‹s
+ 
+¡©es
+) const = 0;
+
+	@/usr/include/SFML/Graphics/Export.hpp
+
+25 #iâdeà
+SFML_GRAPHICS_EXPORT_HPP
+
+
+26 
+	#SFML_GRAPHICS_EXPORT_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+37 #ià
+defšed
+(
+SFML_GRAPHICS_EXPORTS
+)
+
+39 
+	#SFML_GRAPHICS_API
+ 
+SFML_API_EXPORT
+
+
+	)
+
+43 
+	#SFML_GRAPHICS_API
+ 
+SFML_API_IMPORT
+
+
+	)
+
+	@/usr/include/SFML/Graphics/PrimitiveType.hpp
+
+25 #iâdeà
+SFML_PRIMITIVETYPE_HPP
+
+
+26 
+	#SFML_PRIMITIVETYPE_HPP
+
+
+	)
+
+28 
+Çme¥aû
+ 
+	gsf
+
+
+39 
+	ePrim™iveTy³
+
+
+41 
+	gPošts
+,
+
+42 
+	gLšes
+,
+
+43 
+	gLšesSŒ
+,
+
+44 
+	gTrŸngËs
+,
+
+45 
+	gTrŸngËsSŒ
+,
+
+46 
+	gTrŸngËsFª
+,
+
+47 
+	gQuads
+
+
+	@/usr/include/SFML/Graphics/Rect.hpp
+
+25 #iâdeà
+SFML_RECT_HPP
+
+
+26 
+	#SFML_RECT_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+32 
+	~<®gÜ™hm
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+42 şas 
+	cReù
+
+
+44 
+	gpublic
+ :
+
+53 
+Reù
+();
+
+67 
+Reù
+(
+T
+ 
+»ùLeá
+, T 
+»ùTİ
+, T 
+»ùWidth
+, T 
+»ùHeight
+);
+
+79 
+Reù
+(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+pos™iÚ
+, cÚ¡ VeùÜ2<T>& 
+size
+);
+
+92 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gU
+>
+
+93 
+ex¶ic™
+ 
+Reù
+(cÚ¡ Reù<
+U
+>& 
+»ùªgË
+);
+
+106 
+boŞ
+ 
+cÚšs
+(
+T
+ 
+x
+, T 
+y
+) const;
+
+118 
+boŞ
+ 
+cÚšs
+(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+pošt
+) const;
+
+130 
+boŞ
+ 
+š‹r£ùs
+(cÚ¡ 
+Reù
+<
+T
+>& 
+»ùªgË
+) const;
+
+146 
+boŞ
+ 
+š‹r£ùs
+(cÚ¡ 
+Reù
+<
+T
+>& 
+»ùªgË
+, Reù<T>& 
+š‹r£ùiÚ
+) const;
+
+151 
+T
+ 
+	gËá
+;
+
+152 
+T
+ 
+	gtİ
+;
+
+153 
+T
+ 
+	gwidth
+;
+
+154 
+T
+ 
+	gheight
+;
+
+169 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+170 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+Reù
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gReù
+<
+	gT
+>& 
+	gright
+);
+
+184 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+185 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+Reù
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gReù
+<
+	gT
+>& 
+	gright
+);
+
+187 
+	~<SFML/G¿phics/Reù.šl
+>
+
+190 
+	gReù
+<> 
+	tIÁReù
+;
+
+191 
+	gReù
+<> 
+	tFlßtReù
+;
+
+	@/usr/include/SFML/Graphics/RenderTarget.hpp
+
+25 #iâdeà
+SFML_RENDERTARGET_HPP
+
+
+26 
+	#SFML_RENDERTARGET_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/CŞÜ.hµ
+>
+
+33 
+	~<SFML/G¿phics/Reù.hµ
+>
+
+34 
+	~<SFML/G¿phics/V›w.hµ
+>
+
+35 
+	~<SFML/G¿phics/T¿nsfÜm.hµ
+>
+
+36 
+	~<SFML/G¿phics/BËndMode.hµ
+>
+
+37 
+	~<SFML/G¿phics/R’d”S‹s.hµ
+>
+
+38 
+	~<SFML/G¿phics/Prim™iveTy³.hµ
+>
+
+39 
+	~<SFML/G¿phics/V”‹x.hµ
+>
+
+40 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+43 
+Çme¥aû
+ 
+	gsf
+
+
+45 
+şass
+ 
+	gD¿wabË
+;
+
+51 şas 
+	cSFML_GRAPHICS_API
+ 
+	gR’d”T¬g‘
+ : 
+NÚCİyabË
+
+
+53 
+public
+ :
+
+59 
+vœtu®
+ ~
+R’d”T¬g‘
+();
+
+70 
+ş—r
+(cÚ¡ 
+CŞÜ
+& 
+cŞÜ
+ = Color(0, 0, 0, 255));
+
+91 
+£tV›w
+(cÚ¡ 
+V›w
+& 
+v›w
+);
+
+101 cÚ¡ 
+	gV›w
+& 
+g‘V›w
+() const;
+
+114 cÚ¡ 
+	gV›w
+& 
+g‘DeçuÉV›w
+() const;
+
+129 
+IÁReù
+ 
+g‘V›wpÜt
+(cÚ¡ 
+V›w
+& 
+v›w
+) const;
+
+149 
+VeùÜ2f
+ 
+m­Pix–ToCoÜds
+(cÚ¡ 
+VeùÜ2i
+& 
+pošt
+) const;
+
+180 
+VeùÜ2f
+ 
+m­Pix–ToCoÜds
+(cÚ¡ 
+VeùÜ2i
+& 
+pošt
+, cÚ¡ 
+V›w
+& 
+v›w
+) const;
+
+200 
+VeùÜ2i
+ 
+m­CoÜdsToPix–
+(cÚ¡ 
+VeùÜ2f
+& 
+pošt
+) const;
+
+227 
+VeùÜ2i
+ 
+m­CoÜdsToPix–
+(cÚ¡ 
+VeùÜ2f
+& 
+pošt
+, cÚ¡ 
+V›w
+& 
+v›w
+) const;
+
+236 
+d¿w
+(cÚ¡ 
+D¿wabË
+& 
+d¿wabË
+, cÚ¡ 
+R’d”S‹s
+& 
+¡©es
+ = R’d”S‹s::
+DeçuÉ
+);
+
+247 
+d¿w
+(cÚ¡ 
+V”‹x
+* 
+v”tiûs
+, 
+v”‹xCouÁ
+,
+
+248 
+Prim™iveTy³
+ 
+ty³
+, cÚ¡ 
+R’d”S‹s
+& 
+¡©es
+ = R’d”S‹s::
+DeçuÉ
+);
+
+256 
+vœtu®
+ 
+VeùÜ2u
+ 
+g‘Size
+() const = 0;
+
+290 
+pushGLS‹s
+();
+
+301 
+pİGLS‹s
+();
+
+324 
+»£tGLS‹s
+();
+
+326 
+	g´Ùeùed
+ :
+
+332 
+R’d”T¬g‘
+();
+
+341 
+š™Ÿlize
+();
+
+343 
+	g´iv©e
+:
+
+349 
+­¶yCu¼’tV›w
+();
+
+357 
+­¶yBËndMode
+(
+BËndMode
+ 
+mode
+);
+
+365 
+­¶yT¿nsfÜm
+(cÚ¡ 
+T¿nsfÜm
+& 
+ŒªsfÜm
+);
+
+373 
+­¶yTextu»
+(cÚ¡ 
+Textu»
+* 
+‹xtu»
+);
+
+381 
+­¶yShad”
+(cÚ¡ 
+Shad”
+* 
+shad”
+);
+
+395 
+vœtu®
+ 
+boŞ
+ 
+aùiv©e
+(boŞ 
+aùive
+) = 0;
+
+401 
+	sS‹sCache
+
+
+403 ’um {
+	gV”‹xCacheSize
+ = 4};
+
+405 
+boŞ
+ 
+	gglS‹sS‘
+;
+
+406 
+boŞ
+ 
+	gv›wChªged
+;
+
+407 
+BËndMode
+ 
+	gÏ¡BËndMode
+;
+
+408 
+Ušt64
+ 
+	gÏ¡Textu»Id
+;
+
+409 
+boŞ
+ 
+	gu£V”‹xCache
+;
+
+410 
+V”‹x
+ 
+	gv”‹xCache
+[
+V”‹xCacheSize
+];
+
+416 
+V›w
+ 
+	gm_deçuÉV›w
+;
+
+417 
+V›w
+ 
+	gm_v›w
+;
+
+418 
+S‹sCache
+ 
+	gm_ÿche
+;
+
+	@/usr/include/SFML/Graphics/Transformable.hpp
+
+25 #iâdeà
+SFML_TRANSFORMABLE_HPP
+
+
+26 
+	#SFML_TRANSFORMABLE_HPP
+
+
+	)
+
+31 
+	~<SFML/G¿phics/ExpÜt.hµ
+>
+
+32 
+	~<SFML/G¿phics/T¿nsfÜm.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_GRAPHICS_API
+ 
+	gT¿nsfÜmabË
+
+
+43 
+	gpublic
+ :
+
+49 
+T¿nsfÜmabË
+();
+
+55 
+	gvœtu®
+ ~
+T¿nsfÜmabË
+();
+
+70 
+£tPos™iÚ
+(
+x
+, 
+y
+);
+
+84 
+£tPos™iÚ
+(cÚ¡ 
+VeùÜ2f
+& 
+pos™iÚ
+);
+
+98 
+£tRÙ©iÚ
+(
+ªgË
+);
+
+113 
+£tSÿË
+(
+çùÜX
+, 
+çùÜY
+);
+
+127 
+£tSÿË
+(cÚ¡ 
+VeùÜ2f
+& 
+çùÜs
+);
+
+145 
+£tOrigš
+(
+x
+, 
+y
+);
+
+162 
+£tOrigš
+(cÚ¡ 
+VeùÜ2f
+& 
+Üigš
+);
+
+172 cÚ¡ 
+	gVeùÜ2f
+& 
+g‘Pos™iÚ
+() const;
+
+184 
+g‘RÙ©iÚ
+() const;
+
+194 cÚ¡ 
+	gVeùÜ2f
+& 
+g‘SÿË
+() const;
+
+204 cÚ¡ 
+	gVeùÜ2f
+& 
+g‘Origš
+() const;
+
+223 
+move
+(
+off£tX
+, 
+off£tY
+);
+
+240 
+move
+(cÚ¡ 
+VeùÜ2f
+& 
+off£t
+);
+
+255 
+rÙ©e
+(
+ªgË
+);
+
+274 
+sÿË
+(
+çùÜX
+, 
+çùÜY
+);
+
+292 
+sÿË
+(cÚ¡ 
+VeùÜ2f
+& 
+çùÜ
+);
+
+302 cÚ¡ 
+	gT¿nsfÜm
+& 
+g‘T¿nsfÜm
+() const;
+
+312 cÚ¡ 
+	gT¿nsfÜm
+& 
+g‘Inv”£T¿nsfÜm
+() const;
+
+314 
+	g´iv©e
+ :
+
+319 
+VeùÜ2f
+ 
+m_Üigš
+;
+
+320 
+VeùÜ2f
+ 
+	gm_pos™iÚ
+;
+
+321 
+	gm_rÙ©iÚ
+;
+
+322 
+VeùÜ2f
+ 
+	gm_sÿË
+;
+
+323 
+mubË
+ 
+T¿nsfÜm
+ 
+	gm_ŒªsfÜm
+;
+
+324 
+mubË
+ 
+boŞ
+ 
+	gm_ŒªsfÜmN“dUpd©e
+;
+
+325 
+mubË
+ 
+T¿nsfÜm
+ 
+	gm_šv”£T¿nsfÜm
+;
+
+326 
+mubË
+ 
+boŞ
+ 
+	gm_šv”£T¿nsfÜmN“dUpd©e
+;
+
+	@/usr/include/SFML/System.hpp
+
+25 #iâdeà
+SFML_SYSTEM_HPP
+
+
+26 
+	#SFML_SYSTEM_HPP
+
+
+	)
+
+32 
+	~<SFML/CÚfig.hµ
+>
+
+33 
+	~<SFML/Sy¡em/Clock.hµ
+>
+
+34 
+	~<SFML/Sy¡em/E¼.hµ
+>
+
+35 
+	~<SFML/Sy¡em/IÅutSŒ—m.hµ
+>
+
+36 
+	~<SFML/Sy¡em/Lock.hµ
+>
+
+37 
+	~<SFML/Sy¡em/Mu‹x.hµ
+>
+
+38 
+	~<SFML/Sy¡em/SË•.hµ
+>
+
+39 
+	~<SFML/Sy¡em/SŒšg.hµ
+>
+
+40 
+	~<SFML/Sy¡em/Th»ad.hµ
+>
+
+41 
+	~<SFML/Sy¡em/Th»adLoÿl.hµ
+>
+
+42 
+	~<SFML/Sy¡em/Th»adLoÿlPŒ.hµ
+>
+
+43 
+	~<SFML/Sy¡em/Utf.hµ
+>
+
+44 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+45 
+	~<SFML/Sy¡em/VeùÜ3.hµ
+>
+
+	@/usr/include/SFML/System/NonCopyable.hpp
+
+25 #iâdeà
+SFML_NONCOPYABLE_HPP
+
+
+26 
+	#SFML_NONCOPYABLE_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_SYSTEM_API
+ 
+	gNÚCİyabË
+
+
+43 
+	g´Ùeùed
+ :
+
+53 
+NÚCİyabË
+() {}
+
+55 
+´iv©e
+ :
+
+67 
+NÚCİyabË
+(const NonCopyable&);
+
+79 
+	gNÚCİyabË
+& 
+	gİ”©Ü
+ =(cÚ¡ 
+NÚCİyabË
+&);
+
+	@/usr/include/SFML/System/String.hpp
+
+25 #iâdeà
+SFML_STRING_HPP
+
+
+26 
+	#SFML_STRING_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<loÿË
+>
+
+33 
+	~<¡ršg
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+43 şas 
+	cSFML_SYSTEM_API
+ 
+	gSŒšg
+
+
+45 
+	gpublic
+ :
+
+50 
+¡d
+::
+	tbasic_¡ršg
+<
+	tUšt32
+>::
+	t™”©Ü
+ 
+	tI‹¿tÜ
+;
+
+51 
+	g¡d
+::
+	tbasic_¡ršg
+<
+	tUšt32
+>::
+	tcÚ¡_™”©Ü
+ 
+	tCÚ¡I‹¿tÜ
+;
+
+56 cÚ¡ 
+	g¡d
+::
+size_t
+ 
+Inv®idPos
+;
+
+64 
+SŒšg
+();
+
+76 
+SŒšg
+(
+ªsiCh¬
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+84 
+SŒšg
+(
+wch¬_t
+ 
+wideCh¬
+);
+
+92 
+SŒšg
+(
+Ušt32
+ 
+utf32Ch¬
+);
+
+104 
+SŒšg
+(cÚ¡ * 
+ªsiSŒšg
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+116 
+SŒšg
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+ªsiSŒšg
+, cÚ¡ std::
+loÿË
+&†ocale = std::locale());
+
+124 
+SŒšg
+(cÚ¡ 
+wch¬_t
+* 
+wideSŒšg
+);
+
+132 
+SŒšg
+(cÚ¡ 
+¡d
+::
+w¡ršg
+& 
+wideSŒšg
+);
+
+140 
+SŒšg
+(cÚ¡ 
+Ušt32
+* 
+utf32SŒšg
+);
+
+148 
+SŒšg
+(cÚ¡ 
+¡d
+::
+basic_¡ršg
+<
+Ušt32
+>& 
+utf32SŒšg
+);
+
+156 
+SŒšg
+(cÚ¡ SŒšg& 
+cİy
+);
+
+173 
+İ”©Ü
+ 
+	g¡d
+::
+¡ršg
+() const;
+
+188 
+İ”©Ü
+ 
+	g¡d
+::
+w¡ršg
+() const;
+
+205 
+	g¡d
+::
+¡ršg
+ 
+toAnsiSŒšg
+(cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale()) const;
+
+218 
+	g¡d
+::
+w¡ršg
+ 
+toWideSŒšg
+() const;
+
+228 
+	gSŒšg
+& 
+	gİ”©Ü
+ =(cÚ¡ 
+SŒšg
+& 
+right
+);
+
+238 
+	gSŒšg
+& 
+	gİ”©Ü
+ +=(cÚ¡ 
+SŒšg
+& 
+right
+);
+
+251 
+Ušt32
+ 
+	gİ”©Ü
+ [](
+	g¡d
+::
+size_t
+ 
+šdex
+) const;
+
+264 
+	gUšt32
+& 
+	gİ”©Ü
+ [](
+	g¡d
+::
+size_t
+ 
+šdex
+);
+
+274 
+ş—r
+();
+
+284 
+	g¡d
+::
+size_t
+ 
+g‘Size
+() const;
+
+294 
+boŞ
+ 
+isEm±y
+() const;
+
+306 
+”a£
+(
+¡d
+::
+size_t
+ 
+pos™iÚ
+, std::size_ˆ
+couÁ
+ = 1);
+
+318 
+š£¹
+(
+¡d
+::
+size_t
+ 
+pos™iÚ
+, cÚ¡ 
+SŒšg
+& 
+¡r
+);
+
+332 
+	g¡d
+::
+size_t
+ 
+fšd
+(cÚ¡ 
+SŒšg
+& 
+¡r
+, 
+¡d
+::size_ˆ
+¡¬t
+ = 0) const;
+
+345 cÚ¡ 
+Ušt32
+* 
+g‘D©a
+() const;
+
+355 
+I‹¿tÜ
+ 
+begš
+();
+
+365 
+CÚ¡I‹¿tÜ
+ 
+begš
+() const;
+
+379 
+I‹¿tÜ
+ 
+’d
+();
+
+393 
+CÚ¡I‹¿tÜ
+ 
+’d
+() const;
+
+395 
+	g´iv©e
+ :
+
+397 
+ä›nd
+ 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+İ”©Ü
+ ==(cÚ¡ 
+SŒšg
+& 
+Ëá
+, cÚ¡ 
+	gSŒšg
+& 
+	gright
+);
+
+398 
+ä›nd
+ 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <(cÚ¡ 
+	gSŒšg
+& 
+	gËá
+, cÚ¡ SŒšg& 
+	gright
+);
+
+403 
+	g¡d
+::
+basic_¡ršg
+<
+Ušt32
+> 
+m_¡ršg
+;
+
+416 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+SŒšg
+& 
+Ëá
+, cÚ¡ 
+	gSŒšg
+& 
+	gright
+);
+
+428 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+SŒšg
+& 
+Ëá
+, cÚ¡ 
+	gSŒšg
+& 
+	gright
+);
+
+440 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <(cÚ¡ 
+	gSŒšg
+& 
+	gËá
+, cÚ¡ SŒšg& 
+	gright
+);
+
+452 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ >(cÚ¡ 
+	gSŒšg
+& 
+	gËá
+, cÚ¡ SŒšg& 
+	gright
+);
+
+464 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <=(cÚ¡ 
+SŒšg
+& 
+Ëá
+, cÚ¡ 
+	gSŒšg
+& 
+	gright
+);
+
+476 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ >=(cÚ¡ 
+SŒšg
+& 
+Ëá
+, cÚ¡ 
+	gSŒšg
+& 
+	gright
+);
+
+488 
+SFML_SYSTEM_API
+ 
+SŒšg
+ 
+	gİ”©Ü
+ +(cÚ¡ 
+	gSŒšg
+& 
+	gËá
+, cÚ¡ SŒšg& 
+	gright
+);
+
+	@/usr/include/SFML/System/Vector2.hpp
+
+25 #iâdeà
+SFML_VECTOR2_HPP
+
+
+26 
+	#SFML_VECTOR2_HPP
+
+
+	)
+
+29 
+Çme¥aû
+ 
+	gsf
+
+
+36 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+37 şas 
+	cVeùÜ2
+
+
+39 
+	gpublic
+ :
+
+47 
+VeùÜ2
+();
+
+56 
+VeùÜ2
+(
+T
+ 
+X
+, T 
+Y
+);
+
+69 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gU
+>
+
+70 
+ex¶ic™
+ 
+VeùÜ2
+(cÚ¡ VeùÜ2<
+U
+>& 
+veùÜ
+);
+
+75 
+T
+ 
+	gx
+;
+
+76 
+T
+ 
+	gy
+;
+
+88 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+89 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ2<T>& 
+	gright
+);
+
+104 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+105 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ +=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+);
+
+120 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+121 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ -=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+);
+
+133 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+134 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ +(cÚ¡ VeùÜ2<T>& 
+	gËá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+);
+
+146 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+147 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ2<T>& 
+	gËá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+);
+
+159 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+160 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ *(cÚ¡ VeùÜ2<T>& 
+	gËá
+, 
+T
+ 
+	gright
+);
+
+172 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+173 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ *(
+T
+ 
+	gËá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+);
+
+188 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+189 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ *=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, T 
+	gright
+);
+
+201 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+202 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ /(cÚ¡ VeùÜ2<T>& 
+	gËá
+, 
+T
+ 
+	gright
+);
+
+217 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+218 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ /=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, T 
+	gright
+);
+
+232 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+233 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gright
+);
+
+247 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+248 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gright
+);
+
+250 
+	~<SFML/Sy¡em/VeùÜ2.šl
+>
+
+253 
+	gVeùÜ2
+<> 
+	tVeùÜ2i
+;
+
+254 
+	gVeùÜ2
+<> 
+	tVeùÜ2u
+;
+
+255 
+	gVeùÜ2
+<> 
+	tVeùÜ2f
+;
+
+	@/usr/include/SFML/System/Vector3.hpp
+
+25 #iâdeà
+SFML_VECTOR3_HPP
+
+
+26 
+	#SFML_VECTOR3_HPP
+
+
+	)
+
+29 
+Çme¥aû
+ 
+	gsf
+
+
+36 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+37 şas 
+	cVeùÜ3
+
+
+39 
+	gpublic
+ :
+
+47 
+VeùÜ3
+();
+
+57 
+VeùÜ3
+(
+T
+ 
+X
+, T 
+Y
+, T 
+Z
+);
+
+70 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gU
+>
+
+71 
+ex¶ic™
+ 
+VeùÜ3
+(cÚ¡ VeùÜ3<
+U
+>& 
+veùÜ
+);
+
+76 
+T
+ 
+	gx
+;
+
+77 
+T
+ 
+	gy
+;
+
+78 
+T
+ 
+	gz
+;
+
+90 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+91 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ3<T>& 
+	gËá
+);
+
+106 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+107 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ +=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+);
+
+122 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+123 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ -=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+);
+
+135 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+136 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ +(cÚ¡ VeùÜ3<T>& 
+	gËá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+);
+
+148 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+149 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ3<T>& 
+	gËá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+);
+
+161 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+162 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ *(cÚ¡ VeùÜ3<T>& 
+	gËá
+, 
+T
+ 
+	gright
+);
+
+174 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+175 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ *(
+T
+ 
+	gËá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+);
+
+190 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+191 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ *=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, T 
+	gright
+);
+
+203 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+204 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ /(cÚ¡ VeùÜ3<T>& 
+	gËá
+, 
+T
+ 
+	gright
+);
+
+219 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+220 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ /=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, T 
+	gright
+);
+
+234 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+235 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gright
+);
+
+249 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+250 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gright
+);
+
+252 
+	~<SFML/Sy¡em/VeùÜ3.šl
+>
+
+255 
+	gVeùÜ3
+<> 
+	tVeùÜ3i
+;
+
+256 
+	gVeùÜ3
+<> 
+	tVeùÜ3f
+;
+
+	@/usr/include/SFML/Window/Context.hpp
+
+25 #iâdeà
+SFML_CONTEXT_HPP
+
+
+26 
+	#SFML_CONTEXT_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Wšdow/GlResourû.hµ
+>
+
+33 
+	~<SFML/Wšdow/CÚ‹xtS‘tšgs.hµ
+>
+
+34 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+37 
+Çme¥aû
+ 
+	gsf
+
+
+39 
+Çme¥aû
+ 
+	g´iv
+
+
+41 
+şass
+ 
+	gGlCÚ‹xt
+;
+
+48 
+şass
+ 
+SFML_WINDOW_API
+ 
+	gCÚ‹xt
+ : 
+GlResourû
+, 
+	gNÚCİyabË
+
+
+50 
+	gpublic
+ :
+
+58 
+CÚ‹xt
+();
+
+66 ~
+CÚ‹xt
+();
+
+76 
+boŞ
+ 
+£tAùive
+(boŞ 
+aùive
+);
+
+78 
+	gpublic
+ :
+
+91 
+CÚ‹xt
+(cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+, 
+width
+, 
+height
+);
+
+93 
+	g´iv©e
+ :
+
+98 
+´iv
+::
+GlCÚ‹xt
+* 
+m_cÚ‹xt
+;
+
+	@/usr/include/SFML/Window/ContextSettings.hpp
+
+25 #iâdeà
+SFML_CONTEXTSETTINGS_HPP
+
+
+26 
+	#SFML_CONTEXTSETTINGS_HPP
+
+
+	)
+
+29 
+Çme¥aû
+ 
+	gsf
+
+
+36 
+	sCÚ‹xtS‘tšgs
+
+
+48 
+ex¶ic™
+ 
+CÚ‹xtS‘tšgs
+(
+d•th
+ = 0, 
+¡’c
+ = 0, 
+ªtŸlŸsšg
+ = 0, 
+majÜ
+ = 2, 
+mšÜ
+ = 0) :
+
+49 
+d•thB™s
+ (
+d•th
+),
+
+50 
+¡’cB™s
+ (
+¡’c
+),
+
+51 
+ªtŸlŸsšgLev–
+(
+ªtŸlŸsšg
+),
+
+52 
+majÜV”siÚ
+ (
+majÜ
+),
+
+53 
+mšÜV”siÚ
+ (
+mšÜ
+)
+
+60 
+	gd•thB™s
+;
+
+61 
+	g¡’cB™s
+;
+
+62 
+	gªtŸlŸsšgLev–
+;
+
+63 
+	gmajÜV”siÚ
+;
+
+64 
+	gmšÜV”siÚ
+;
+
+	@/usr/include/SFML/Window/Event.hpp
+
+25 #iâdeà
+SFML_EVENT_HPP
+
+
+26 
+	#SFML_EVENT_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+32 
+	~<SFML/Wšdow/Joy¡ick.hµ
+>
+
+33 
+	~<SFML/Wšdow/Keybßrd.hµ
+>
+
+34 
+	~<SFML/Wšdow/Mou£.hµ
+>
+
+37 
+Çme¥aû
+ 
+	gsf
+
+
+43 şas 
+	cEv’t
+
+
+45 
+	gpublic
+ :
+
+51 
+	sSizeEv’t
+
+
+53 
+width
+;
+
+54 
+	gheight
+;
+
+61 
+	sKeyEv’t
+
+
+63 
+	gKeybßrd
+::
+Key
+ 
+code
+;
+
+64 
+boŞ
+ 
+	g®t
+;
+
+65 
+boŞ
+ 
+	gcÚŒŞ
+;
+
+66 
+boŞ
+ 
+	gshiá
+;
+
+67 
+boŞ
+ 
+	gsy¡em
+;
+
+74 
+	sTextEv’t
+
+
+76 
+Ušt32
+ 
+	gunicode
+;
+
+83 
+	sMou£MoveEv’t
+
+
+85 
+	gx
+;
+
+86 
+	gy
+;
+
+94 
+	sMou£Bu‰ÚEv’t
+
+
+96 
+	gMou£
+::
+Bu‰Ú
+ 
+bu‰Ú
+;
+
+97 
+	gx
+;
+
+98 
+	gy
+;
+
+105 
+	sMou£Wh“lEv’t
+
+
+107 
+	gd–
+;
+
+108 
+	gx
+;
+
+109 
+	gy
+;
+
+117 
+	sJoy¡ickCÚÃùEv’t
+
+
+119 
+	gjoy¡ickId
+;
+
+126 
+	sJoy¡ickMoveEv’t
+
+
+128 
+	gjoy¡ickId
+;
+
+129 
+	gJoy¡ick
+::
+Axis
+ 
+axis
+;
+
+130 
+	gpos™iÚ
+;
+
+138 
+	sJoy¡ickBu‰ÚEv’t
+
+
+140 
+	gjoy¡ickId
+;
+
+141 
+	gbu‰Ú
+;
+
+148 
+	eEv’tTy³
+
+
+150 
+	gClo£d
+,
+
+151 
+	gResized
+,
+
+152 
+	gLo¡Focus
+,
+
+153 
+	gGašedFocus
+,
+
+154 
+	gTextEÁ”ed
+,
+
+155 
+	gKeyP»s£d
+,
+
+156 
+	gKeyR–—£d
+,
+
+157 
+	gMou£Wh“lMoved
+,
+
+158 
+	gMou£Bu‰ÚP»s£d
+,
+
+159 
+	gMou£Bu‰ÚR–—£d
+,
+
+160 
+	gMou£Moved
+,
+
+161 
+	gMou£EÁ”ed
+,
+
+162 
+	gMou£Leá
+,
+
+163 
+	gJoy¡ickBu‰ÚP»s£d
+,
+
+164 
+	gJoy¡ickBu‰ÚR–—£d
+,
+
+165 
+	gJoy¡ickMoved
+,
+
+166 
+	gJoy¡ickCÚÃùed
+,
+
+167 
+	gJoy¡ickDiscÚÃùed
+,
+
+169 
+	gCouÁ
+
+
+175 
+Ev’tTy³
+ 
+	gty³
+;
+
+179 
+SizeEv’t
+ 
+	gsize
+;
+
+180 
+KeyEv’t
+ 
+	gkey
+;
+
+181 
+TextEv’t
+ 
+	g‹xt
+;
+
+182 
+Mou£MoveEv’t
+ 
+	gmou£Move
+;
+
+183 
+Mou£Bu‰ÚEv’t
+ 
+	gmou£Bu‰Ú
+;
+
+184 
+Mou£Wh“lEv’t
+ 
+	gmou£Wh“l
+;
+
+185 
+Joy¡ickMoveEv’t
+ 
+	gjoy¡ickMove
+;
+
+186 
+Joy¡ickBu‰ÚEv’t
+ 
+	gjoy¡ickBu‰Ú
+;
+
+187 
+Joy¡ickCÚÃùEv’t
+ 
+	gjoy¡ickCÚÃù
+;
+
+	@/usr/include/SFML/Window/GlResource.hpp
+
+25 #iâdeà
+SFML_GLRESOURCE_HPP
+
+
+26 
+	#SFML_GLRESOURCE_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 şas 
+	cSFML_WINDOW_API
+ 
+	gGlResourû
+
+
+42 
+	g´Ùeùed
+ :
+
+48 
+GlResourû
+();
+
+54 ~
+GlResourû
+();
+
+60 
+’su»GlCÚ‹xt
+();
+
+	@/usr/include/SFML/Window/Joystick.hpp
+
+25 #iâdeà
+SFML_JOYSTICK_HPP
+
+
+26 
+	#SFML_JOYSTICK_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 şas 
+	cSFML_WINDOW_API
+ 
+	gJoy¡ick
+
+
+42 
+	gpublic
+ :
+
+50 
+CouÁ
+ = 8,
+
+51 
+	gBu‰ÚCouÁ
+ = 32,
+
+52 
+	gAxisCouÁ
+ = 8
+
+59 
+	eAxis
+
+
+61 
+	gX
+,
+
+62 
+	gY
+,
+
+63 
+	gZ
+,
+
+64 
+	gR
+,
+
+65 
+	gU
+,
+
+66 
+	gV
+,
+
+67 
+	gPovX
+,
+
+68 
+	gPovY
+
+
+79 
+boŞ
+ 
+isCÚÃùed
+(
+joy¡ick
+);
+
+91 
+g‘Bu‰ÚCouÁ
+(
+joy¡ick
+);
+
+104 
+boŞ
+ 
+hasAxis
+(
+joy¡ick
+, 
+Axis
+ 
+axis
+);
+
+117 
+boŞ
+ 
+isBu‰ÚP»s£d
+(
+joy¡ick
+, 
+bu‰Ú
+);
+
+130 
+g‘AxisPos™iÚ
+(
+joy¡ick
+, 
+Axis
+ 
+axis
+);
+
+141 
+upd©e
+();
+
+	@/usr/include/SFML/Window/Keyboard.hpp
+
+25 #iâdeà
+SFML_KEYBOARD_HPP
+
+
+26 
+	#SFML_KEYBOARD_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 şas 
+	cSFML_WINDOW_API
+ 
+	gKeybßrd
+
+
+42 
+	gpublic
+ :
+
+48 
+	eKey
+
+
+50 
+Unknown
+ = -1,
+
+51 
+	gA
+ = 0,
+
+52 
+	gB
+,
+
+53 
+	gC
+,
+
+54 
+	gD
+,
+
+55 
+	gE
+,
+
+56 
+	gF
+,
+
+57 
+	gG
+,
+
+58 
+	gH
+,
+
+59 
+	gI
+,
+
+60 
+	gJ
+,
+
+61 
+	gK
+,
+
+62 
+	gL
+,
+
+63 
+	gM
+,
+
+64 
+	gN
+,
+
+65 
+	gO
+,
+
+66 
+	gP
+,
+
+67 
+	gQ
+,
+
+68 
+	gR
+,
+
+69 
+	gS
+,
+
+70 
+	gT
+,
+
+71 
+	gU
+,
+
+72 
+	gV
+,
+
+73 
+	gW
+,
+
+74 
+	gX
+,
+
+75 
+	gY
+,
+
+76 
+	gZ
+,
+
+77 
+	gNum0
+,
+
+78 
+	gNum1
+,
+
+79 
+	gNum2
+,
+
+80 
+	gNum3
+,
+
+81 
+	gNum4
+,
+
+82 
+	gNum5
+,
+
+83 
+	gNum6
+,
+
+84 
+	gNum7
+,
+
+85 
+	gNum8
+,
+
+86 
+	gNum9
+,
+
+87 
+	gEsÿ³
+,
+
+88 
+	gLCÚŒŞ
+,
+
+89 
+	gLShiá
+,
+
+90 
+	gLAÉ
+,
+
+91 
+	gLSy¡em
+,
+
+92 
+	gRCÚŒŞ
+,
+
+93 
+	gRShiá
+,
+
+94 
+	gRAÉ
+,
+
+95 
+	gRSy¡em
+,
+
+96 
+	gM’u
+,
+
+97 
+	gLB¿ck‘
+,
+
+98 
+	gRB¿ck‘
+,
+
+99 
+	gSemiCŞÚ
+,
+
+100 
+	gComma
+,
+
+101 
+	gP”iod
+,
+
+102 
+	gQuÙe
+,
+
+103 
+	gSÏsh
+,
+
+104 
+	gBackSÏsh
+,
+
+105 
+	gTde
+,
+
+106 
+	gEqu®
+,
+
+107 
+	gDash
+,
+
+108 
+	gS·û
+,
+
+109 
+	gR‘uº
+,
+
+110 
+	gBackS·û
+,
+
+111 
+	gTab
+,
+
+112 
+	gPageUp
+,
+
+113 
+	gPageDown
+,
+
+114 
+	gEnd
+,
+
+115 
+	gHome
+,
+
+116 
+	gIn£¹
+,
+
+117 
+	gD–‘e
+,
+
+118 
+	gAdd
+,
+
+119 
+	gSubŒaù
+,
+
+120 
+	gMuÉly
+,
+
+121 
+	gDivide
+,
+
+122 
+	gLeá
+,
+
+123 
+	gRight
+,
+
+124 
+	gUp
+,
+
+125 
+	gDown
+,
+
+126 
+	gNum·d0
+,
+
+127 
+	gNum·d1
+,
+
+128 
+	gNum·d2
+,
+
+129 
+	gNum·d3
+,
+
+130 
+	gNum·d4
+,
+
+131 
+	gNum·d5
+,
+
+132 
+	gNum·d6
+,
+
+133 
+	gNum·d7
+,
+
+134 
+	gNum·d8
+,
+
+135 
+	gNum·d9
+,
+
+136 
+	gF1
+,
+
+137 
+	gF2
+,
+
+138 
+	gF3
+,
+
+139 
+	gF4
+,
+
+140 
+	gF5
+,
+
+141 
+	gF6
+,
+
+142 
+	gF7
+,
+
+143 
+	gF8
+,
+
+144 
+	gF9
+,
+
+145 
+	gF10
+,
+
+146 
+	gF11
+,
+
+147 
+	gF12
+,
+
+148 
+	gF13
+,
+
+149 
+	gF14
+,
+
+150 
+	gF15
+,
+
+151 
+	gPau£
+,
+
+153 
+	gKeyCouÁ
+
+
+164 
+boŞ
+ 
+isKeyP»s£d
+(
+Key
+ 
+key
+);
+
+	@/usr/include/SFML/Window/Mouse.hpp
+
+25 #iâdeà
+SFML_MOUSE_HPP
+
+
+26 
+	#SFML_MOUSE_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+37 
+şass
+ 
+	gWšdow
+;
+
+43 şas 
+	cSFML_WINDOW_API
+ 
+	gMou£
+
+
+45 
+	gpublic
+ :
+
+51 
+	eBu‰Ú
+
+
+53 
+Leá
+,
+
+54 
+	gRight
+,
+
+55 
+	gMiddË
+,
+
+56 
+	gXBu‰Ú1
+,
+
+57 
+	gXBu‰Ú2
+,
+
+59 
+	gBu‰ÚCouÁ
+
+
+70 
+boŞ
+ 
+isBu‰ÚP»s£d
+(
+Bu‰Ú
+ 
+bu‰Ú
+);
+
+81 
+VeùÜ2i
+ 
+g‘Pos™iÚ
+();
+
+94 
+VeùÜ2i
+ 
+g‘Pos™iÚ
+(cÚ¡ 
+Wšdow
+& 
+»ÏtiveTo
+);
+
+105 
+£tPos™iÚ
+(cÚ¡ 
+VeùÜ2i
+& 
+pos™iÚ
+);
+
+117 
+£tPos™iÚ
+(cÚ¡ 
+VeùÜ2i
+& 
+pos™iÚ
+, cÚ¡ 
+Wšdow
+& 
+»ÏtiveTo
+);
+
+	@/usr/include/SFML/Window/VideoMode.hpp
+
+25 #iâdeà
+SFML_VIDEOMODE_HPP
+
+
+26 
+	#SFML_VIDEOMODE_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+32 
+	~<veùÜ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_WINDOW_API
+ 
+	gVideoMode
+
+
+43 
+	gpublic
+ :
+
+51 
+VideoMode
+();
+
+61 
+VideoMode
+(
+modeWidth
+, 
+modeHeight
+, 
+modeB™sP”Pix–
+ = 32);
+
+69 
+VideoMode
+ 
+g‘DesktİMode
+();
+
+85 cÚ¡ 
+	g¡d
+::
+veùÜ
+<
+VideoMode
+>& 
+g‘FuÎsü“nModes
+();
+
+97 
+boŞ
+ 
+isV®id
+() const;
+
+102 
+	gwidth
+;
+
+103 
+	gheight
+;
+
+104 
+	gb™sP”Pix–
+;
+
+117 
+SFML_WINDOW_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+VideoMode
+& 
+Ëá
+, cÚ¡ 
+	gVideoMode
+& 
+	gright
+);
+
+129 
+SFML_WINDOW_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+VideoMode
+& 
+Ëá
+, cÚ¡ 
+	gVideoMode
+& 
+	gright
+);
+
+141 
+SFML_WINDOW_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <(cÚ¡ 
+	gVideoMode
+& 
+	gËá
+, cÚ¡ VideoMode& 
+	gright
+);
+
+153 
+SFML_WINDOW_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ >(cÚ¡ 
+	gVideoMode
+& 
+	gËá
+, cÚ¡ VideoMode& 
+	gright
+);
+
+165 
+SFML_WINDOW_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <=(cÚ¡ 
+VideoMode
+& 
+Ëá
+, cÚ¡ 
+	gVideoMode
+& 
+	gright
+);
+
+177 
+SFML_WINDOW_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ >=(cÚ¡ 
+VideoMode
+& 
+Ëá
+, cÚ¡ 
+	gVideoMode
+& 
+	gright
+);
+
+	@/usr/include/SFML/Window/Window.hpp
+
+25 #iâdeà
+SFML_WINDOW_HPP
+
+
+26 
+	#SFML_WINDOW_HPP
+
+
+	)
+
+31 
+	~<SFML/Wšdow/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Wšdow/CÚ‹xtS‘tšgs.hµ
+>
+
+33 
+	~<SFML/Wšdow/VideoMode.hµ
+>
+
+34 
+	~<SFML/Wšdow/WšdowHªdË.hµ
+>
+
+35 
+	~<SFML/Wšdow/WšdowStyË.hµ
+>
+
+36 
+	~<SFML/Wšdow/GlResourû.hµ
+>
+
+37 
+	~<SFML/Sy¡em/Clock.hµ
+>
+
+38 
+	~<SFML/Sy¡em/VeùÜ2.hµ
+>
+
+39 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+40 
+	~<SFML/Sy¡em/SŒšg.hµ
+>
+
+43 
+Çme¥aû
+ 
+	gsf
+
+
+45 
+Çme¥aû
+ 
+	g´iv
+
+
+47 
+şass
+ 
+	gGlCÚ‹xt
+;
+
+48 
+şass
+ 
+	gWšdowIm¶
+;
+
+51 
+şass
+ 
+	gEv’t
+;
+
+57 
+şass
+ 
+SFML_WINDOW_API
+ 
+	gWšdow
+ : 
+GlResourû
+, 
+	gNÚCİyabË
+
+
+59 
+	gpublic
+ :
+
+68 
+Wšdow
+();
+
+89 
+Wšdow
+(
+VideoMode
+ 
+mode
+, cÚ¡ 
+SŒšg
+& 
+t™Ë
+, 
+Ušt32
+ 
+¡yË
+ = 
+StyË
+::
+DeçuÉ
+, cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+ = ContextSettings());
+
+105 
+ex¶ic™
+ 
+Wšdow
+(
+WšdowHªdË
+ 
+hªdË
+, cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+ = ContextSettings());
+
+113 
+	gvœtu®
+ ~
+Wšdow
+();
+
+128 
+ü—‹
+(
+VideoMode
+ 
+mode
+, cÚ¡ 
+SŒšg
+& 
+t™Ë
+, 
+Ušt32
+ 
+¡yË
+ = 
+StyË
+::
+DeçuÉ
+, cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+ = ContextSettings());
+
+141 
+ü—‹
+(
+WšdowHªdË
+ 
+hªdË
+, cÚ¡ 
+CÚ‹xtS‘tšgs
+& 
+£‰šgs
+ = ContextSettings());
+
+153 
+şo£
+();
+
+165 
+boŞ
+ 
+isO³n
+() const;
+
+178 cÚ¡ 
+	gCÚ‹xtS‘tšgs
+& 
+g‘S‘tšgs
+() const;
+
+203 
+boŞ
+ 
+pŞlEv’t
+(
+Ev’t
+& 
+ev’t
+);
+
+230 
+boŞ
+ 
+wa™Ev’t
+(
+Ev’t
+& 
+ev’t
+);
+
+240 
+VeùÜ2i
+ 
+g‘Pos™iÚ
+() const;
+
+254 
+£tPos™iÚ
+(cÚ¡ 
+VeùÜ2i
+& 
+pos™iÚ
+);
+
+267 
+VeùÜ2u
+ 
+g‘Size
+() const;
+
+277 
+£tSize
+(cÚ¡ 
+VeùÜ2u
+ 
+size
+);
+
+287 
+£tT™Ë
+(cÚ¡ 
+SŒšg
+& 
+t™Ë
+);
+
+304 
+£tIcÚ
+(
+width
+, 
+height
+, cÚ¡ 
+Ušt8
+* 
+pix–s
+);
+
+314 
+£tVisibË
+(
+boŞ
+ 
+visibË
+);
+
+329 
+£tV”tiÿlSyncEÇbËd
+(
+boŞ
+ 
+’abËd
+);
+
+339 
+£tMou£CursÜVisibË
+(
+boŞ
+ 
+visibË
+);
+
+353 
+£tKeyR•—tEÇbËd
+(
+boŞ
+ 
+’abËd
+);
+
+370 
+£tF¿m”©eLim™
+(
+lim™
+);
+
+383 
+£tJoy¡ickTh»shŞd
+(
+th»shŞd
+);
+
+400 
+boŞ
+ 
+£tAùive
+(boŞ 
+aùive
+ = 
+Œue
+) const;
+
+410 
+di¥Ïy
+();
+
+424 
+WšdowHªdË
+ 
+g‘Sy¡emHªdË
+() const;
+
+426 
+	g´Ùeùed
+ :
+
+436 
+vœtu®
+ 
+ÚC»©e
+();
+
+445 
+vœtu®
+ 
+ÚResize
+();
+
+447 
+	g´iv©e
+:
+
+461 
+boŞ
+ 
+f‹rEv’t
+(cÚ¡ 
+Ev’t
+& 
+ev’t
+);
+
+467 
+š™Ÿlize
+();
+
+472 
+	g´iv
+::
+WšdowIm¶
+* 
+m_im¶
+;
+
+473 
+	g´iv
+::
+GlCÚ‹xt
+* 
+m_cÚ‹xt
+;
+
+474 
+Clock
+ 
+	gm_şock
+;
+
+475 
+Time
+ 
+	gm_äameTimeLim™
+;
+
+476 
+VeùÜ2u
+ 
+	gm_size
+;
+
+	@/usr/include/SFML/Window/WindowStyle.hpp
+
+25 #iâdeà
+SFML_WINDOWSTYLE_HPP
+
+
+26 
+	#SFML_WINDOWSTYLE_HPP
+
+
+	)
+
+29 
+Çme¥aû
+ 
+	gsf
+
+
+31 
+Çme¥aû
+ 
+	gStyË
+
+
+40 
+	gNÚe
+ = 0,
+
+41 
+	gT™Ëb¬
+ = 1 << 0,
+
+42 
+	gResize
+ = 1 << 1,
+
+43 
+	gClo£
+ = 1 << 2,
+
+44 
+	gFuÎsü“n
+ = 1 << 3,
+
+46 
+	gDeçuÉ
+ = 
+T™Ëb¬
+ | 
+Resize
+ | 
+Clo£
+
+
+	@/usr/include/SFML/Config.hpp
+
+25 #iâdeà
+SFML_CONFIG_HPP
+
+
+26 
+	#SFML_CONFIG_HPP
+
+
+	)
+
+32 
+	#SFML_VERSION_MAJOR
+ 2
+
+	)
+
+33 
+	#SFML_VERSION_MINOR
+ 1
+
+	)
+
+39 #ià
+defšed
+(
+_WIN32
+è|| defšed(
+__WIN32__
+)
+
+42 
+	#SFML_SYSTEM_WINDOWS
+
+
+	)
+
+43 #iâdeà
+NOMINMAX
+
+
+44 
+	#NOMINMAX
+
+
+	)
+
+47 #–ià
+defšed
+(
+lšux
+è|| defšed(
+__lšux
+)
+
+50 
+	#SFML_SYSTEM_LINUX
+
+
+	)
+
+52 #–ià
+defšed
+(
+__APPLE__
+è|| defšed(
+MACOSX
+è|| defšed(
+macštosh
+è|| defšed(
+Macštosh
+)
+
+55 
+	#SFML_SYSTEM_MACOS
+
+
+	)
+
+57 #–ià
+defšed
+(
+__F»eBSD__
+è|| defšed(
+__F»eBSD_k”Ãl__
+è|| defšed(
+__gnu_hurd__
+)
+
+60 
+	#SFML_SYSTEM_FREEBSD
+
+
+	)
+
+65 #”rÜ 
+This
+ 
+İ”©šg
+ 
+sy¡em
+ 
+is
+ 
+nÙ
+ 
+suµÜ‹d
+ 
+by
+ 
+SFML
+ 
+lib¿ry
+
+
+73 #ià!
+defšed
+(
+NDEBUG
+)
+
+75 
+	#SFML_DEBUG
+
+
+	)
+
+83 #ià!
+defšed
+(
+SFML_STATIC
+)
+
+85 #ià
+defšed
+(
+SFML_SYSTEM_WINDOWS
+)
+
+88 
+	#SFML_API_EXPORT
+ 
+	`__deş¥ec
+(
+dÎexpÜt
+)
+
+	)
+
+89 
+	#SFML_API_IMPORT
+ 
+	`__deş¥ec
+(
+dÎimpÜt
+)
+
+	)
+
+92 #ifdeà
+_MSC_VER
+
+
+94 #´agm¨
+w¬nšg
+(
+di§bË
+ : 4251)
+
+100 #ià
+__GNUC__
+ >= 4
+
+104 
+	#SFML_API_EXPORT
+ 
+	`__©Œibu‹__
+ ((
+	`__visib™y__
+ ("deçuÉ")))
+
+	)
+
+105 
+	#SFML_API_IMPORT
+ 
+	`__©Œibu‹__
+ ((
+	`__visib™y__
+ ("deçuÉ")))
+
+	)
+
+110 
+	#SFML_API_EXPORT
+
+
+	)
+
+111 
+	#SFML_API_IMPORT
+
+
+	)
+
+120 
+	#SFML_API_EXPORT
+
+
+	)
+
+121 
+	#SFML_API_IMPORT
+
+
+	)
+
+129 
+Çme¥aû
+ 
+	gsf
+
+
+136 sigÃd 
+	tIÁ8
+;
+
+137 
+	tUšt8
+;
+
+140 sigÃd 
+	tIÁ16
+;
+
+141 
+	tUšt16
+;
+
+144 sigÃd 
+	tIÁ32
+;
+
+145 
+	tUšt32
+;
+
+148 #ià
+defšed
+(
+_MSC_VER
+)
+
+149 sigÃd 
+	t__št64
+ 
+	tIÁ64
+;
+
+150 
+	t__št64
+ 
+	tUšt64
+;
+
+152 sigÃd 
+	tIÁ64
+;
+
+153 
+	tUšt64
+;
+
+	@/usr/include/SFML/Graphics/Rect.inl
+
+27 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+28 
+	gReù
+<
+	gT
+>::
+	$Reù
+() :
+
+29 
+	`Ëá
+ (0),
+
+30 
+	`tİ
+ (0),
+
+31 
+	`width
+ (0),
+
+32 
+	$height
+(0)
+
+35 
+	}
+}
+
+39 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+40 
+	gReù
+<
+	gT
+>::
+	$Reù
+(
+T
+ 
+»ùLeá
+, T 
+»ùTİ
+, T 
+»ùWidth
+, T 
+»ùHeight
+) :
+
+41 
+	`Ëá
+ (
+»ùLeá
+),
+
+42 
+	`tİ
+ (
+»ùTİ
+),
+
+43 
+	`width
+ (
+»ùWidth
+),
+
+44 
+	$height
+(
+»ùHeight
+)
+
+47 
+	}
+}
+
+51 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+52 
+	gReù
+<
+	gT
+>::
+Reù
+(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+pos™iÚ
+, cÚ¡ VeùÜ2<T>& 
+size
+) :
+
+53 
+Ëá
+ (
+pos™iÚ
+.
+x
+),
+
+54 
+tİ
+ (
+pos™iÚ
+.
+y
+),
+
+55 
+width
+ (
+size
+.
+x
+),
+
+56 
+	$height
+(
+size
+.
+y
+)
+
+59 
+	}
+}
+
+63 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+64 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gU
+>
+
+65 
+	gReù
+<
+	gT
+>::
+Reù
+(cÚ¡ Reù<
+U
+>& 
+»ùªgË
+) :
+
+66 
+Ëá
+ (
+¡©ic_ÿ¡
+<
+T
+>(
+»ùªgË
+.left)),
+
+67 
+tİ
+ (
+¡©ic_ÿ¡
+<
+T
+>(
+»ùªgË
+.top)),
+
+68 
+width
+ (
+¡©ic_ÿ¡
+<
+T
+>(
+»ùªgË
+.width)),
+
+69 
+height
+(
+¡©ic_ÿ¡
+<
+T
+>(
+»ùªgË
+.height))
+
+75 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+76 
+boŞ
+ 
+	gReù
+<
+	gT
+>::
+	$cÚšs
+(
+T
+ 
+x
+, T 
+y
+) const
+
+81 
+T
+ 
+mšX
+ = 
+¡d
+::
+	`mš
+(
+Ëá
+,†eá + 
+width
+);
+
+82 
+T
+ 
+maxX
+ = 
+¡d
+::
+	`max
+(
+Ëá
+,†eá + 
+width
+);
+
+83 
+T
+ 
+mšY
+ = 
+¡d
+::
+	`mš
+(
+tİ
+,İ + 
+height
+);
+
+84 
+T
+ 
+maxY
+ = 
+¡d
+::
+	`max
+(
+tİ
+,İ + 
+height
+);
+
+86  (
+x
+ >ğ
+mšX
+è&& (x < 
+maxX
+è&& (
+y
+ >ğ
+mšY
+è&& (y < 
+maxY
+);
+
+87 
+	}
+}
+
+91 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+92 
+boŞ
+ 
+	gReù
+<
+	gT
+>::
+cÚšs
+(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+pošt
+) const
+
+94  
+cÚšs
+(
+pošt
+.
+x
+,…ošt.
+y
+);
+
+99 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+100 
+boŞ
+ 
+	gReù
+<
+	gT
+>::
+š‹r£ùs
+(cÚ¡ 
+Reù
+<
+T
+>& 
+»ùªgË
+) const
+
+102 
+Reù
+<
+T
+> 
+š‹r£ùiÚ
+;
+
+103  
+š‹r£ùs
+(
+»ùªgË
+, 
+š‹r£ùiÚ
+);
+
+108 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+109 
+boŞ
+ 
+	gReù
+<
+	gT
+>::
+š‹r£ùs
+(cÚ¡ 
+Reù
+<
+T
+>& 
+»ùªgË
+, Reù<T>& 
+š‹r£ùiÚ
+) const
+
+114 
+T
+ 
+	gr1MšX
+ = 
+¡d
+::
+mš
+(
+Ëá
+,†eá + 
+width
+);
+
+115 
+T
+ 
+	gr1MaxX
+ = 
+¡d
+::
+max
+(
+Ëá
+,†eá + 
+width
+);
+
+116 
+T
+ 
+	gr1MšY
+ = 
+¡d
+::
+mš
+(
+tİ
+,İ + 
+height
+);
+
+117 
+T
+ 
+	gr1MaxY
+ = 
+¡d
+::
+max
+(
+tİ
+,İ + 
+height
+);
+
+120 
+T
+ 
+	gr2MšX
+ = 
+¡d
+::
+mš
+(
+»ùªgË
+.
+Ëá
+,„eùªgË.Ëá +„eùªgË.
+width
+);
+
+121 
+T
+ 
+	gr2MaxX
+ = 
+¡d
+::
+max
+(
+»ùªgË
+.
+Ëá
+,„eùªgË.Ëá +„eùªgË.
+width
+);
+
+122 
+T
+ 
+	gr2MšY
+ = 
+¡d
+::
+mš
+(
+»ùªgË
+.
+tİ
+,„eùªgË.tİ +„eùªgË.
+height
+);
+
+123 
+T
+ 
+	gr2MaxY
+ = 
+¡d
+::
+max
+(
+»ùªgË
+.
+tİ
+,„eùªgË.tİ +„eùªgË.
+height
+);
+
+126 
+T
+ 
+	gš‹rLeá
+ = 
+¡d
+::
+max
+(
+r1MšX
+, 
+r2MšX
+);
+
+127 
+T
+ 
+	gš‹rTİ
+ = 
+¡d
+::
+max
+(
+r1MšY
+, 
+r2MšY
+);
+
+128 
+T
+ 
+	gš‹rRight
+ = 
+¡d
+::
+mš
+(
+r1MaxX
+, 
+r2MaxX
+);
+
+129 
+T
+ 
+	gš‹rBÙtom
+ = 
+¡d
+::
+mš
+(
+r1MaxY
+, 
+r2MaxY
+);
+
+132 ià((
+	gš‹rLeá
+ < 
+	gš‹rRight
+è&& (
+	gš‹rTİ
+ < 
+	gš‹rBÙtom
+))
+
+134 
+	gš‹r£ùiÚ
+ = 
+Reù
+<
+T
+>(
+š‹rLeá
+, 
+	gš‹rTİ
+, 
+	gš‹rRight
+ - 
+	gš‹rLeá
+, 
+	gš‹rBÙtom
+ - interTop);
+
+135  
+	gŒue
+;
+
+139 
+	gš‹r£ùiÚ
+ = 
+Reù
+<
+T
+>(0, 0, 0, 0);
+
+140  
+	gçl£
+;
+
+146 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+147 
+šlše
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+Reù
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gReù
+<
+	gT
+>& 
+	gright
+)
+
+149  (
+	gËá
+.Ëá =ğ
+right
+.
+Ëá
+è&& (Ëá.
+width
+ ==„ight.width) &&
+
+150 (
+Ëá
+.
+tİ
+ =ğ
+right
+.tİè&& (Ëá.
+height
+ ==„ight.height);
+
+155 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+156 
+šlše
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+Reù
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gReù
+<
+	gT
+>& 
+	gright
+)
+
+158  !(
+	gËá
+ =ğ
+right
+);
+
+	@/usr/include/SFML/System/Clock.hpp
+
+25 #iâdeà
+SFML_CLOCK_HPP
+
+
+26 
+	#SFML_CLOCK_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/Time.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 şas 
+	cSFML_SYSTEM_API
+ 
+	gClock
+
+
+43 
+	gpublic
+ :
+
+51 
+Clock
+();
+
+63 
+Time
+ 
+g‘EÏp£dTime
+() const;
+
+74 
+Time
+ 
+»¡¬t
+();
+
+76 
+	g´iv©e
+ :
+
+81 
+Time
+ 
+m_¡¬tTime
+;
+
+	@/usr/include/SFML/System/Err.hpp
+
+25 #iâdeà
+SFML_ERR_HPP
+
+
+26 
+	#SFML_ERR_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<o¡»am
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+41 
+SFML_SYSTEM_API
+ 
+	g¡d
+::
+o¡»am
+& 
+”r
+();
+
+	@/usr/include/SFML/System/Export.hpp
+
+25 #iâdeà
+SFML_SYSTEM_EXPORT_HPP
+
+
+26 
+	#SFML_SYSTEM_EXPORT_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+37 #ià
+defšed
+(
+SFML_SYSTEM_EXPORTS
+)
+
+39 
+	#SFML_SYSTEM_API
+ 
+SFML_API_EXPORT
+
+
+	)
+
+43 
+	#SFML_SYSTEM_API
+ 
+SFML_API_IMPORT
+
+
+	)
+
+	@/usr/include/SFML/System/InputStream.hpp
+
+25 #iâdeà
+SFML_INPUTSTREAM_HPP
+
+
+26 
+	#SFML_INPUTSTREAM_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 şas 
+	cIÅutSŒ—m
+
+
+42 
+	gpublic
+ :
+
+48 
+vœtu®
+ ~
+IÅutSŒ—m
+() {}
+
+62 
+vœtu®
+ 
+IÁ64
+ 
+»ad
+(* 
+d©a
+, IÁ64 
+size
+) = 0;
+
+72 
+vœtu®
+ 
+IÁ64
+ 
+£ek
+(IÁ64 
+pos™iÚ
+) = 0;
+
+80 
+vœtu®
+ 
+IÁ64
+ 
+‹Î
+() = 0;
+
+88 
+vœtu®
+ 
+IÁ64
+ 
+g‘Size
+() = 0;
+
+	@/usr/include/SFML/System/Lock.hpp
+
+25 #iâdeà
+SFML_LOCK_HPP
+
+
+26 
+	#SFML_LOCK_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+37 
+şass
+ 
+	gMu‹x
+;
+
+43 şas 
+	cSFML_SYSTEM_API
+ 
+	gLock
+ : 
+NÚCİyabË
+
+
+45 
+public
+ :
+
+55 
+ex¶ic™
+ 
+Lock
+(
+Mu‹x
+& 
+mu‹x
+);
+
+63 ~
+Lock
+();
+
+65 
+	g´iv©e
+ :
+
+70 
+Mu‹x
+& 
+m_mu‹x
+;
+
+	@/usr/include/SFML/System/Mutex.hpp
+
+25 #iâdeà
+SFML_MUTEX_HPP
+
+
+26 
+	#SFML_MUTEX_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+37 
+Çme¥aû
+ 
+	g´iv
+
+
+39 
+şass
+ 
+	gMu‹xIm¶
+;
+
+47 şas 
+	cSFML_SYSTEM_API
+ 
+	gMu‹x
+ : 
+NÚCİyabË
+
+
+49 
+public
+ :
+
+55 
+Mu‹x
+();
+
+61 ~
+Mu‹x
+();
+
+73 
+lock
+();
+
+81 
+uÆock
+();
+
+83 
+	g´iv©e
+ :
+
+88 
+´iv
+::
+Mu‹xIm¶
+* 
+m_mu‹xIm¶
+;
+
+	@/usr/include/SFML/System/Sleep.hpp
+
+25 #iâdeà
+SFML_SLEEP_HPP
+
+
+26 
+	#SFML_SLEEP_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/Time.hµ
+>
+
+35 
+Çme¥aû
+ 
+	gsf
+
+
+47 
+SFML_SYSTEM_API
+ 
+¦“p
+(
+Time
+ 
+du¿tiÚ
+);
+
+	@/usr/include/SFML/System/Thread.hpp
+
+25 #iâdeà
+SFML_THREAD_HPP
+
+
+26 
+	#SFML_THREAD_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+33 
+	~<c¡dlib
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+38 
+Çme¥aû
+ 
+	g´iv
+
+
+40 
+şass
+ 
+	gTh»adIm¶
+;
+
+41 
+	gTh»adFunc
+;
+
+48 şas 
+	cSFML_SYSTEM_API
+ 
+	gTh»ad
+ : 
+NÚCİyabË
+
+
+50 
+public
+ :
+
+74 
+‹m¶©e
+ <
+ty³Çme
+ 
+F
+>
+
+75 
+Th»ad
+(
+F
+ 
+funùiÚ
+);
+
+102 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gF
+,y³Çm
+	gA
+>
+
+103 
+Th»ad
+(
+F
+ 
+funùiÚ
+, 
+A
+ 
+¬gum’t
+);
+
+125 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gC
+>
+
+126 
+Th»ad
+((
+C
+::*
+funùiÚ
+)(), C* 
+objeù
+);
+
+135 ~
+Th»ad
+();
+
+146 
+Ïunch
+();
+
+159 
+wa™
+();
+
+172 
+‹rmš©e
+();
+
+174 
+	g´iv©e
+ :
+
+176 
+ä›nd
+ 
+şass
+ 
+´iv
+::
+Th»adIm¶
+;
+
+184 
+run
+();
+
+189 
+	g´iv
+::
+Th»adIm¶
+* 
+m_im¶
+;
+
+190 
+	g´iv
+::
+Th»adFunc
+* 
+m_’ŒyPošt
+;
+
+193 
+	~<SFML/Sy¡em/Th»ad.šl
+>
+
+	@/usr/include/SFML/System/ThreadLocal.hpp
+
+25 #iâdeà
+SFML_THREADLOCAL_HPP
+
+
+26 
+	#SFML_THREADLOCAL_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+32 
+	~<SFML/Sy¡em/NÚCİyabË.hµ
+>
+
+33 
+	~<c¡dlib
+>
+
+36 
+Çme¥aû
+ 
+	gsf
+
+
+38 
+Çme¥aû
+ 
+	g´iv
+
+
+40 
+şass
+ 
+	gTh»adLoÿlIm¶
+;
+
+47 şas 
+	cSFML_SYSTEM_API
+ 
+	gTh»adLoÿl
+ : 
+NÚCİyabË
+
+
+49 
+public
+ :
+
+57 
+Th»adLoÿl
+(* 
+v®ue
+ = 
+NULL
+);
+
+63 ~
+Th»adLoÿl
+();
+
+71 
+£tV®ue
+(* 
+v®ue
+);
+
+79 * 
+g‘V®ue
+() const;
+
+81 
+	g´iv©e
+ :
+
+86 
+´iv
+::
+Th»adLoÿlIm¶
+* 
+m_im¶
+;
+
+	@/usr/include/SFML/System/ThreadLocalPtr.hpp
+
+25 #iâdeà
+SFML_THREADLOCALPTR_HPP
+
+
+26 
+	#SFML_THREADLOCALPTR_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/Th»adLoÿl.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+41 şas 
+	cTh»adLoÿlPŒ
+ : 
+´iv©e
+ 
+Th»adLoÿl
+
+
+43 
+public
+ :
+
+51 
+Th»adLoÿlPŒ
+(
+T
+* 
+v®ue
+ = 
+NULL
+);
+
+62 
+	gT
+& 
+	gİ”©Ü
+ *() const;
+
+73 
+T
+* 
+	gİ”©Ü
+ ->() const;
+
+82 
+İ”©Ü
+ 
+	gT
+*() const;
+
+92 
+	gTh»adLoÿlPŒ
+<
+	gT
+>& 
+	gİ”©Ü
+ =(
+T
+* 
+v®ue
+);
+
+102 
+	gTh»adLoÿlPŒ
+<
+	gT
+>& 
+	gİ”©Ü
+ =(cÚ¡ 
+Th»adLoÿlPŒ
+<
+T
+>& 
+right
+);
+
+107 
+	~<SFML/Sy¡em/Th»adLoÿlPŒ.šl
+>
+
+	@/usr/include/SFML/System/Utf.hpp
+
+25 #iâdeà
+SFML_UTF_HPP
+
+
+26 
+	#SFML_UTF_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+32 
+	~<®gÜ™hm
+>
+
+33 
+	~<loÿË
+>
+
+34 
+	~<¡ršg
+>
+
+35 
+	~<c¡dlib
+>
+
+38 
+Çme¥aû
+ 
+	gsf
+
+
+40 
+	g‹m¶©e
+ <
+	gN
+>
+
+41 
+şass
+ 
+	gUtf
+;
+
+47 
+	g‹m¶©e
+ <>
+
+48 
+şass
+ 
+	gUtf
+<8>
+
+50 
+	gpublic
+ :
+
+66 
+‹m¶©e
+ <
+ty³Çme
+ 
+In
+>
+
+67 
+In
+ 
+decode
+(IÀ
+begš
+, IÀ
+’d
+, 
+Ušt32
+& 
+ouut
+, Ušt32 
+»¶aûm’t
+ = 0);
+
+82 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+83 
+Out
+ 
+’code
+(
+Ušt32
+ 
+šput
+, Ouˆ
+ouut
+, 
+Ušt8
+ 
+»¶aûm’t
+ = 0);
+
+97 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+98 
+In
+ 
+Ãxt
+(IÀ
+begš
+, IÀ
+’d
+);
+
+113 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+114 
+	g¡d
+::
+size_t
+ 
+couÁ
+(
+In
+ 
+begš
+, IÀ
+’d
+);
+
+130 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+131 
+Out
+ 
+äomAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+143 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+144 
+Out
+ 
+äomWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+156 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+157 
+Out
+ 
+äomL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+174 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+175 
+Out
+ 
+toAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+188 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+189 
+Out
+ 
+toWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+ = 0);
+
+202 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+203 
+Out
+ 
+toL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0);
+
+220 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+221 
+Out
+ 
+toUtf8
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+233 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+234 
+Out
+ 
+toUtf16
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+246 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+247 
+Out
+ 
+toUtf32
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+254 
+	g‹m¶©e
+ <>
+
+255 
+şass
+ 
+	gUtf
+<16>
+
+257 
+	gpublic
+ :
+
+273 
+‹m¶©e
+ <
+ty³Çme
+ 
+In
+>
+
+274 
+In
+ 
+decode
+(IÀ
+begš
+, IÀ
+’d
+, 
+Ušt32
+& 
+ouut
+, Ušt32 
+»¶aûm’t
+ = 0);
+
+289 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+290 
+Out
+ 
+’code
+(
+Ušt32
+ 
+šput
+, Ouˆ
+ouut
+, 
+Ušt16
+ 
+»¶aûm’t
+ = 0);
+
+304 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+305 
+In
+ 
+Ãxt
+(IÀ
+begš
+, IÀ
+’d
+);
+
+320 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+321 
+	g¡d
+::
+size_t
+ 
+couÁ
+(
+In
+ 
+begš
+, IÀ
+’d
+);
+
+337 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+338 
+Out
+ 
+äomAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+350 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+351 
+Out
+ 
+äomWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+363 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+364 
+Out
+ 
+äomL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+381 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+382 
+Out
+ 
+toAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+395 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+396 
+Out
+ 
+toWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+ = 0);
+
+409 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+410 
+Out
+ 
+toL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0);
+
+422 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+423 
+Out
+ 
+toUtf8
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+440 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+441 
+Out
+ 
+toUtf16
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+453 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+454 
+Out
+ 
+toUtf32
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+461 
+	g‹m¶©e
+ <>
+
+462 
+şass
+ 
+	gUtf
+<32>
+
+464 
+	gpublic
+ :
+
+481 
+‹m¶©e
+ <
+ty³Çme
+ 
+In
+>
+
+482 
+In
+ 
+decode
+(IÀ
+begš
+, IÀ
+’d
+, 
+Ušt32
+& 
+ouut
+, Ušt32 
+»¶aûm’t
+ = 0);
+
+498 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+499 
+Out
+ 
+’code
+(
+Ušt32
+ 
+šput
+, Ouˆ
+ouut
+, Ušt32 
+»¶aûm’t
+ = 0);
+
+513 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+514 
+In
+ 
+Ãxt
+(IÀ
+begš
+, IÀ
+’d
+);
+
+528 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+529 
+	g¡d
+::
+size_t
+ 
+couÁ
+(
+In
+ 
+begš
+, IÀ
+’d
+);
+
+545 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+546 
+Out
+ 
+äomAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+558 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+559 
+Out
+ 
+äomWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+571 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+572 
+Out
+ 
+äomL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+589 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+590 
+Out
+ 
+toAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+603 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+604 
+Out
+ 
+toWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+ = 0);
+
+617 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+618 
+Out
+ 
+toL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0);
+
+630 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+631 
+Out
+ 
+toUtf8
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+643 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+644 
+Out
+ 
+toUtf16
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+661 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+662 
+Out
+ 
+toUtf32
+(
+In
+ 
+begš
+, IÀ
+’d
+, Ouˆ
+ouut
+);
+
+677 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+678 
+Ušt32
+ 
+decodeAnsi
+(
+In
+ 
+šput
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+692 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+693 
+Ušt32
+ 
+decodeWide
+(
+In
+ 
+šput
+);
+
+710 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+711 
+Out
+ 
+’codeAnsi
+(
+Ušt32
+ 
+cod•ošt
+, Ouˆ
+ouut
+, 
+»¶aûm’t
+ = 0, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale = std::locale());
+
+727 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+728 
+Out
+ 
+’codeWide
+(
+Ušt32
+ 
+cod•ošt
+, Ouˆ
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+ = 0);
+
+731 
+	~<SFML/Sy¡em/Utf.šl
+>
+
+734 
+	gUtf
+<8> 
+	tUtf8
+;
+
+735 
+	gUtf
+<16> 
+	tUtf16
+;
+
+736 
+	gUtf
+<32> 
+	tUtf32
+;
+
+	@/usr/include/SFML/System/Vector2.inl
+
+27 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+28 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>::
+	$VeùÜ2
+() :
+
+29 
+	`x
+(0),
+
+30 
+	$y
+(0)
+
+33 
+	}
+}
+
+37 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+38 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>::
+	$VeùÜ2
+(
+T
+ 
+X
+, T 
+Y
+) :
+
+39 
+	`x
+(
+X
+),
+
+40 
+	$y
+(
+Y
+)
+
+43 
+	}
+}
+
+47 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+48 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gU
+>
+
+49 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>::
+VeùÜ2
+(cÚ¡ VeùÜ2<
+U
+>& 
+veùÜ
+) :
+
+50 
+x
+(
+¡©ic_ÿ¡
+<
+T
+>(
+veùÜ
+.x)),
+
+51 
+y
+(
+¡©ic_ÿ¡
+<
+T
+>(
+veùÜ
+.y))
+
+57 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+58 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ2<T>& 
+	gright
+)
+
+60  
+	gVeùÜ2
+<
+	gT
+>(-
+	gright
+.
+	gx
+, -right.
+	gy
+);
+
+65 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+66 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ +=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+)
+
+68 
+	gËá
+.
+	gx
+ +ğ
+right
+.
+x
+;
+
+69 
+	gËá
+.
+	gy
+ +ğ
+right
+.
+y
+;
+
+71  
+	gËá
+;
+
+76 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+77 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ -=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+)
+
+79 
+	gËá
+.
+	gx
+ -ğ
+right
+.
+x
+;
+
+80 
+	gËá
+.
+	gy
+ -ğ
+right
+.
+y
+;
+
+82  
+	gËá
+;
+
+87 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+88 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ +(cÚ¡ VeùÜ2<T>& 
+	gËá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+)
+
+90  
+	gVeùÜ2
+<
+	gT
+>(
+	gËá
+.
+	gx
+ + 
+	gright
+.x,†eá.
+	gy
+ +„ight.y);
+
+95 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+96 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ2<T>& 
+	gËá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+)
+
+98  
+	gVeùÜ2
+<
+	gT
+>(
+	gËá
+.
+	gx
+ - 
+	gright
+.x,†eá.
+	gy
+ -„ight.y);
+
+103 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+104 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ *(cÚ¡ VeùÜ2<T>& 
+	gËá
+, 
+T
+ 
+	gright
+)
+
+106  
+	gVeùÜ2
+<
+	gT
+>(
+	gËá
+.
+x
+ * 
+	gright
+,†eá.
+y
+ *„ight);
+
+111 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+112 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ *(
+T
+ 
+	gËá
+, cÚ¡ VeùÜ2<T>& 
+	gright
+)
+
+114  
+	gVeùÜ2
+<
+	gT
+>(
+	gright
+.
+x
+ * 
+	gËá
+,„ight.
+y
+ *†eft);
+
+119 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+120 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ *=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, T 
+	gright
+)
+
+122 
+	gËá
+.
+	gx
+ *ğ
+right
+;
+
+123 
+	gËá
+.
+	gy
+ *ğ
+right
+;
+
+125  
+	gËá
+;
+
+130 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+131 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+> 
+	gİ”©Ü
+ /(cÚ¡ VeùÜ2<T>& 
+	gËá
+, 
+T
+ 
+	gright
+)
+
+133  
+	gVeùÜ2
+<
+	gT
+>(
+	gËá
+.
+	gx
+ / 
+	gright
+,†eá.
+	gy
+ /„ight);
+
+138 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+139 
+šlše
+ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gİ”©Ü
+ /=(
+VeùÜ2
+<
+T
+>& 
+Ëá
+, T 
+	gright
+)
+
+141 
+	gËá
+.
+	gx
+ /ğ
+right
+;
+
+142 
+	gËá
+.
+	gy
+ /ğ
+right
+;
+
+144  
+	gËá
+;
+
+149 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+150 
+šlše
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gright
+)
+
+152  (
+	gËá
+.
+	gx
+ =ğ
+right
+.
+x
+è&& (
+Ëá
+.
+y
+ ==„ight.y);
+
+157 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+158 
+šlše
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+VeùÜ2
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ2
+<
+	gT
+>& 
+	gright
+)
+
+160  (
+	gËá
+.
+	gx
+ !ğ
+right
+.
+x
+è|| (
+Ëá
+.
+y
+ !=„ight.y);
+
+	@/usr/include/SFML/System/Vector3.inl
+
+27 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+28 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>::
+	$VeùÜ3
+() :
+
+29 
+	`x
+(0),
+
+30 
+	`y
+(0),
+
+31 
+	$z
+(0)
+
+34 
+	}
+}
+
+38 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+39 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>::
+	$VeùÜ3
+(
+T
+ 
+X
+, T 
+Y
+, T 
+Z
+) :
+
+40 
+	`x
+(
+X
+),
+
+41 
+	`y
+(
+Y
+),
+
+42 
+	$z
+(
+Z
+)
+
+45 
+	}
+}
+
+49 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+50 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gU
+>
+
+51 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>::
+VeùÜ3
+(cÚ¡ VeùÜ3<
+U
+>& 
+veùÜ
+) :
+
+52 
+x
+(
+¡©ic_ÿ¡
+<
+T
+>(
+veùÜ
+.x)),
+
+53 
+y
+(
+¡©ic_ÿ¡
+<
+T
+>(
+veùÜ
+.y)),
+
+54 
+z
+(
+¡©ic_ÿ¡
+<
+T
+>(
+veùÜ
+.z))
+
+60 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+61 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ3<T>& 
+	gËá
+)
+
+63  
+	gVeùÜ3
+<
+	gT
+>(-
+	gËá
+.
+	gx
+, -Ëá.
+	gy
+, -Ëá.
+	gz
+);
+
+68 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+69 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ +=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+)
+
+71 
+	gËá
+.
+	gx
+ +ğ
+right
+.
+x
+;
+
+72 
+	gËá
+.
+	gy
+ +ğ
+right
+.
+y
+;
+
+73 
+	gËá
+.
+	gz
+ +ğ
+right
+.
+z
+;
+
+75  
+	gËá
+;
+
+80 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+81 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ -=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+)
+
+83 
+	gËá
+.
+	gx
+ -ğ
+right
+.
+x
+;
+
+84 
+	gËá
+.
+	gy
+ -ğ
+right
+.
+y
+;
+
+85 
+	gËá
+.
+	gz
+ -ğ
+right
+.
+z
+;
+
+87  
+	gËá
+;
+
+92 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+93 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ +(cÚ¡ VeùÜ3<T>& 
+	gËá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+)
+
+95  
+	gVeùÜ3
+<
+	gT
+>(
+	gËá
+.
+	gx
+ + 
+	gright
+.x,†eá.
+	gy
+ +„ight.y,†eá.
+	gz
+ +„ight.z);
+
+100 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+101 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ -(cÚ¡ VeùÜ3<T>& 
+	gËá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+)
+
+103  
+	gVeùÜ3
+<
+	gT
+>(
+	gËá
+.
+	gx
+ - 
+	gright
+.x,†eá.
+	gy
+ -„ight.y,†eá.
+	gz
+ -„ight.z);
+
+108 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+109 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ *(cÚ¡ VeùÜ3<T>& 
+	gËá
+, 
+T
+ 
+	gright
+)
+
+111  
+	gVeùÜ3
+<
+	gT
+>(
+	gËá
+.
+x
+ * 
+	gright
+,†eá.
+y
+ *„ight,†eá.
+z
+ *„ight);
+
+116 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+117 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ *(
+T
+ 
+	gËá
+, cÚ¡ VeùÜ3<T>& 
+	gright
+)
+
+119  
+	gVeùÜ3
+<
+	gT
+>(
+	gright
+.
+x
+ * 
+	gËá
+,„ight.
+y
+ *†eá,„ight.
+z
+ *†eft);
+
+124 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+125 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ *=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, T 
+	gright
+)
+
+127 
+	gËá
+.
+	gx
+ *ğ
+right
+;
+
+128 
+	gËá
+.
+	gy
+ *ğ
+right
+;
+
+129 
+	gËá
+.
+	gz
+ *ğ
+right
+;
+
+131  
+	gËá
+;
+
+136 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+137 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+> 
+	gİ”©Ü
+ /(cÚ¡ VeùÜ3<T>& 
+	gËá
+, 
+T
+ 
+	gright
+)
+
+139  
+	gVeùÜ3
+<
+	gT
+>(
+	gËá
+.
+	gx
+ / 
+	gright
+,†eá.
+	gy
+ /„ight,†eá.
+	gz
+ /„ight);
+
+144 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+145 
+šlše
+ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gİ”©Ü
+ /=(
+VeùÜ3
+<
+T
+>& 
+Ëá
+, T 
+	gright
+)
+
+147 
+	gËá
+.
+	gx
+ /ğ
+right
+;
+
+148 
+	gËá
+.
+	gy
+ /ğ
+right
+;
+
+149 
+	gËá
+.
+	gz
+ /ğ
+right
+;
+
+151  
+	gËá
+;
+
+156 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+157 
+šlše
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(cÚ¡ 
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gright
+)
+
+159  (
+	gËá
+.
+	gx
+ =ğ
+right
+.
+x
+è&& (
+Ëá
+.
+y
+ =ğright.yè&& (Ëá.
+z
+ ==„ight.z);
+
+164 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+165 
+šlše
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(cÚ¡ 
+VeùÜ3
+<
+T
+>& 
+Ëá
+, cÚ¡ 
+	gVeùÜ3
+<
+	gT
+>& 
+	gright
+)
+
+167  (
+	gËá
+.
+	gx
+ !ğ
+right
+.
+x
+è|| (
+Ëá
+.
+y
+ !ğright.yè|| (Ëá.
+z
+ !=„ight.z);
+
+	@/usr/include/SFML/Window/Export.hpp
+
+25 #iâdeà
+SFML_WINDOW_EXPORT_HPP
+
+
+26 
+	#SFML_WINDOW_EXPORT_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+37 #ià
+defšed
+(
+SFML_WINDOW_EXPORTS
+)
+
+39 
+	#SFML_WINDOW_API
+ 
+SFML_API_EXPORT
+
+
+	)
+
+43 
+	#SFML_WINDOW_API
+ 
+SFML_API_IMPORT
+
+
+	)
+
+	@/usr/include/SFML/Window/WindowHandle.hpp
+
+25 #iâdeà
+SFML_WINDOWHANDLE_HPP
+
+
+26 
+	#SFML_WINDOWHANDLE_HPP
+
+
+	)
+
+31 
+	~<SFML/CÚfig.hµ
+>
+
+34 #ià
+defšed
+(
+SFML_SYSTEM_WINDOWS
+)
+
+35 
+	gHWND__
+;
+
+38 
+Çme¥aû
+ 
+	gsf
+
+
+44 #ià
+defšed
+(
+SFML_SYSTEM_WINDOWS
+)
+
+47 
+HWND__
+* 
+	tWšdowHªdË
+;
+
+49 #–ià
+defšed
+(
+SFML_SYSTEM_LINUX
+è|| defšed(
+SFML_SYSTEM_FREEBSD
+)
+
+52 
+	tWšdowHªdË
+;
+
+54 #–ià
+defšed
+(
+SFML_SYSTEM_MACOS
+)
+
+57 * 
+	tWšdowHªdË
+;
+
+	@/usr/include/SFML/System/Thread.inl
+
+25 
+Çme¥aû
+ 
+	g´iv
+
+
+28 
+	sTh»adFunc
+
+
+30 
+	gvœtu®
+ ~
+Th»adFunc
+() {}
+
+31 
+vœtu®
+ 
+run
+() = 0;
+
+35 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+36 
+	gTh»adFunùÜ
+ : 
+Th»adFunc
+
+
+38 
+Th»adFunùÜ
+(
+T
+ 
+funùÜ
+è: 
+m_funùÜ
+(functor) {}
+
+39 
+vœtu®
+ 
+run
+(è{
+m_funùÜ
+();}
+
+40 
+T
+ 
+	gm_funùÜ
+;
+
+44 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gF
+,y³Çm
+	gA
+>
+
+45 
+	gTh»adFunùÜW™hArg
+ : 
+Th»adFunc
+
+
+47 
+Th»adFunùÜW™hArg
+(
+F
+ 
+funùiÚ
+, 
+A
+ 
+¬g
+è: 
+m_funùiÚ
+(funùiÚ), 
+m_¬g
+(arg) {}
+
+48 
+vœtu®
+ 
+run
+(è{
+m_funùiÚ
+(
+m_¬g
+);}
+
+49 
+F
+ 
+	gm_funùiÚ
+;
+
+50 
+A
+ 
+	gm_¬g
+;
+
+54 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gC
+>
+
+55 
+	gTh»adMemb”Func
+ : 
+Th»adFunc
+
+
+57 
+Th»adMemb”Func
+((
+C
+::*
+funùiÚ
+)(), C* 
+objeù
+è: 
+m_funùiÚ
+(funùiÚ), 
+m_objeù
+(object) {}
+
+58 
+vœtu®
+ 
+run
+(è{(
+	gm_objeù
+->*
+	gm_funùiÚ
+)();}
+
+59 (
+	gC
+::*
+m_funùiÚ
+)();
+
+60 
+C
+* 
+	gm_objeù
+;
+
+67 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gF
+>
+
+68 
+	gTh»ad
+::
+	$Th»ad
+(
+F
+ 
+funùÜ
+) :
+
+69 
+	`m_im¶
+ (
+NULL
+),
+
+70 
+	`m_’ŒyPošt
+(
+Ãw
+ 
+´iv
+::
+Th»adFunùÜ
+<
+F
+>(
+funùÜ
+))
+
+72 
+	}
+}
+
+76 
+‹m¶©e
+ <
+ty³Çme
+ 
+F
+,y³Çm
+	gA
+>
+
+77 
+	gTh»ad
+::
+	$Th»ad
+(
+F
+ 
+funùiÚ
+, 
+A
+ 
+¬gum’t
+) :
+
+78 
+	`m_im¶
+ (
+NULL
+),
+
+79 
+	`m_’ŒyPošt
+(
+Ãw
+ 
+´iv
+::
+Th»adFunùÜW™hArg
+<
+F
+, 
+A
+>(
+funùiÚ
+, 
+¬gum’t
+))
+
+81 
+	}
+}
+
+85 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gC
+>
+
+86 
+	gTh»ad
+::
+Th»ad
+((
+C
+::*
+funùiÚ
+)(), C* 
+objeù
+) :
+
+87 
+m_im¶
+ (
+NULL
+),
+
+88 
+m_’ŒyPošt
+(
+Ãw
+ 
+´iv
+::
+Th»adMemb”Func
+<
+C
+>(
+funùiÚ
+, 
+objeù
+))
+
+	@/usr/include/SFML/System/ThreadLocalPtr.inl
+
+26 
+Çme¥aû
+ 
+	gsf
+
+
+29 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+30 
+	gTh»adLoÿlPŒ
+<
+	gT
+>::
+Th»adLoÿlPŒ
+(
+T
+* 
+v®ue
+) :
+
+31 
+Th»adLoÿl
+(
+v®ue
+)
+
+37 
+‹m¶©e
+ <
+ty³Çme
+ 
+T
+>
+
+38 
+T
+& 
+Th»adLoÿlPŒ
+<T>::
+İ”©Ü
+ *() const
+
+40  *
+¡©ic_ÿ¡
+<
+T
+*>(
+g‘V®ue
+());
+
+45 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+46 
+T
+* 
+	gTh»adLoÿlPŒ
+<
+	gT
+>::
+İ”©Ü
+ ->() const
+
+48  
+¡©ic_ÿ¡
+<
+T
+*>(
+g‘V®ue
+());
+
+53 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+54 
+	gTh»adLoÿlPŒ
+<
+	gT
+>::
+İ”©Ü
+ 
+T
+*() const
+
+56  
+¡©ic_ÿ¡
+<
+T
+*>(
+g‘V®ue
+());
+
+61 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+62 
+	gTh»adLoÿlPŒ
+<
+	gT
+>& Th»adLoÿlPŒ<T>::
+İ”©Ü
+ =(
+T
+* 
+v®ue
+)
+
+64 
+£tV®ue
+(
+v®ue
+);
+
+65  *
+	gthis
+;
+
+70 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gT
+>
+
+71 
+	gTh»adLoÿlPŒ
+<
+	gT
+>& Th»adLoÿlPŒ<T>::
+İ”©Ü
+ =(cÚ¡ 
+Th»adLoÿlPŒ
+<
+T
+>& 
+right
+)
+
+73 
+£tV®ue
+(
+right
+.
+g‘V®ue
+());
+
+74  *
+	gthis
+;
+
+	@/usr/include/SFML/System/Time.hpp
+
+25 #iâdeà
+SFML_TIME_HPP
+
+
+26 
+	#SFML_TIME_HPP
+
+
+	)
+
+31 
+	~<SFML/Sy¡em/ExpÜt.hµ
+>
+
+34 
+Çme¥aû
+ 
+	gsf
+
+
+40 şas 
+	cSFML_SYSTEM_API
+ 
+	gTime
+
+
+42 
+	gpublic
+ :
+
+50 
+Time
+();
+
+60 
+asSecÚds
+() const;
+
+70 
+IÁ32
+ 
+asMli£cÚds
+() const;
+
+80 
+IÁ64
+ 
+asMiüo£cÚds
+() const;
+
+85 cÚ¡ 
+Time
+ 
+	gZ”o
+;
+
+87 
+	g´iv©e
+ :
+
+89 
+ä›nd
+ 
+SFML_SYSTEM_API
+ 
+Time
+ 
+£cÚds
+();
+
+90 
+ä›nd
+ 
+SFML_SYSTEM_API
+ 
+Time
+ 
+mli£cÚds
+(
+IÁ32
+);
+
+91 
+ä›nd
+ 
+SFML_SYSTEM_API
+ 
+Time
+ 
+miüo£cÚds
+(
+IÁ64
+);
+
+102 
+ex¶ic™
+ 
+Time
+(
+IÁ64
+ 
+miüo£cÚds
+);
+
+104 
+	g´iv©e
+ :
+
+109 
+IÁ64
+ 
+m_miüo£cÚds
+;
+
+123 
+SFML_SYSTEM_API
+ 
+Time
+ 
+£cÚds
+(
+amouÁ
+);
+
+136 
+SFML_SYSTEM_API
+ 
+Time
+ 
+mli£cÚds
+(
+IÁ32
+ 
+amouÁ
+);
+
+149 
+SFML_SYSTEM_API
+ 
+Time
+ 
+miüo£cÚds
+(
+IÁ64
+ 
+amouÁ
+);
+
+161 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ ==(
+Time
+ 
+Ëá
+, Tim
+	gright
+);
+
+173 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ !=(
+Time
+ 
+Ëá
+, Tim
+	gright
+);
+
+185 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <(
+Time
+ 
+	gËá
+, Tim
+	gright
+);
+
+197 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ >(
+Time
+ 
+	gËá
+, Tim
+	gright
+);
+
+209 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ <=(
+Time
+ 
+Ëá
+, Tim
+	gright
+);
+
+221 
+SFML_SYSTEM_API
+ 
+boŞ
+ 
+	gİ”©Ü
+ >=(
+Time
+ 
+Ëá
+, Tim
+	gright
+);
+
+232 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ -(Tim
+	gright
+);
+
+244 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ +(Tim
+	gËá
+, Tim
+	gright
+);
+
+256 
+SFML_SYSTEM_API
+ 
+	gTime
+& 
+	gİ”©Ü
+ +=(
+Time
+& 
+Ëá
+, Tim
+	gright
+);
+
+268 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ -(Tim
+	gËá
+, Tim
+	gright
+);
+
+280 
+SFML_SYSTEM_API
+ 
+	gTime
+& 
+	gİ”©Ü
+ -=(
+Time
+& 
+Ëá
+, Tim
+	gright
+);
+
+292 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ *(Tim
+	gËá
+, 
+	gright
+);
+
+304 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ *(Tim
+	gËá
+, 
+IÁ64
+ 
+	gright
+);
+
+316 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ *(
+	gËá
+, Tim
+	gright
+);
+
+328 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ *(
+IÁ64
+ 
+	gËá
+, Tim
+	gright
+);
+
+340 
+SFML_SYSTEM_API
+ 
+	gTime
+& 
+	gİ”©Ü
+ *=(
+Time
+& 
+Ëá
+, 
+	gright
+);
+
+352 
+SFML_SYSTEM_API
+ 
+	gTime
+& 
+	gİ”©Ü
+ *=(
+Time
+& 
+Ëá
+, 
+IÁ64
+ 
+	gright
+);
+
+364 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ /(Tim
+	gËá
+, 
+	gright
+);
+
+376 
+SFML_SYSTEM_API
+ 
+Time
+ 
+	gİ”©Ü
+ /(Tim
+	gËá
+, 
+IÁ64
+ 
+	gright
+);
+
+388 
+SFML_SYSTEM_API
+ 
+	gTime
+& 
+	gİ”©Ü
+ /=(
+Time
+& 
+Ëá
+, 
+	gright
+);
+
+400 
+SFML_SYSTEM_API
+ 
+	gTime
+& 
+	gİ”©Ü
+ /=(
+Time
+& 
+Ëá
+, 
+IÁ64
+ 
+	gright
+);
+
+	@/usr/include/SFML/System/Utf.inl
+
+38 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+39 
+In
+ 
+	gUtf
+<8>::
+	$decode
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Ušt32
+& 
+ouut
+, Ušt32 
+»¶aûm’t
+)
+
+42 cÚ¡ 
+Œašg
+[256] =
+
+53 cÚ¡ 
+Ušt32
+ 
+off£ts
+[6] =
+
+59 
+ŒašgBy‹s
+ = 
+Œašg
+[
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+)];
+
+60 ià(
+begš
+ + 
+ŒašgBy‹s
+ < 
+’d
+)
+
+62 
+ouut
+ = 0;
+
+63 
+ŒašgBy‹s
+)
+
+65 5 : 
+ouut
+ +ğ
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+++); output <<= 6;
+
+66 4 : 
+ouut
+ +ğ
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+++); output <<= 6;
+
+67 3 : 
+ouut
+ +ğ
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+++); output <<= 6;
+
+68 2 : 
+ouut
+ +ğ
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+++); output <<= 6;
+
+69 1 : 
+ouut
+ +ğ
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+++); output <<= 6;
+
+70 0 : 
+ouut
+ +ğ
+¡©ic_ÿ¡
+<
+Ušt8
+>(*
+begš
+++);
+
+72 
+ouut
+ -ğ
+off£ts
+[
+ŒašgBy‹s
+];
+
+77 
+begš
+ = 
+’d
+;
+
+78 
+ouut
+ = 
+»¶aûm’t
+;
+
+81  
+begš
+;
+
+82 
+	}
+}
+
+86 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+87 
+Out
+ 
+	gUtf
+<8>::
+	$’code
+(
+Ušt32
+ 
+šput
+, 
+Out
+ 
+ouut
+, 
+Ušt8
+ 
+»¶aûm’t
+)
+
+90 cÚ¡ 
+Ušt8
+ 
+fœ¡By‹s
+[7] =
+
+96 ià((
+šput
+ > 0x0010FFFF) || ((input >= 0xD800) && (input <= 0xDBFF)))
+
+99 ià(
+»¶aûm’t
+)
+
+100 *
+ouut
+++ = 
+»¶aûm’t
+;
+
+107 
+¡d
+::
+size_t
+ 
+by‹¡oWr™e
+ = 1;
+
+108 ià(
+šput
+ < 0x80è
+by‹¡oWr™e
+ = 1;
+
+109 ià(
+šput
+ < 0x800è
+by‹¡oWr™e
+ = 2;
+
+110 ià(
+šput
+ < 0x10000è
+by‹¡oWr™e
+ = 3;
+
+111 ià(
+šput
+ <ğ0x0010FFFFè
+by‹¡oWr™e
+ = 4;
+
+114 
+Ušt8
+ 
+by‹s
+[4];
+
+115 
+by‹¡oWr™e
+)
+
+117 4 : 
+by‹s
+[3] = 
+¡©ic_ÿ¡
+<
+Ušt8
+>((
+šput
+ | 0x80) & 0xBF); input >>= 6;
+
+118 3 : 
+by‹s
+[2] = 
+¡©ic_ÿ¡
+<
+Ušt8
+>((
+šput
+ | 0x80) & 0xBF); input >>= 6;
+
+119 2 : 
+by‹s
+[1] = 
+¡©ic_ÿ¡
+<
+Ušt8
+>((
+šput
+ | 0x80) & 0xBF); input >>= 6;
+
+120 1 : 
+by‹s
+[0] = 
+¡©ic_ÿ¡
+<
+Ušt8
+> (
+šput
+ | 
+fœ¡By‹s
+[
+by‹¡oWr™e
+]);
+
+124 
+ouut
+ = 
+¡d
+::
+	`cİy
+(
+by‹s
+, by‹ + 
+by‹¡oWr™e
+, output);
+
+127  
+ouut
+;
+
+128 
+	}
+}
+
+132 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+133 
+In
+ 
+	gUtf
+<8>::
+	$Ãxt
+(
+In
+ 
+begš
+, IÀ
+’d
+)
+
+135 
+Ušt32
+ 
+cod•ošt
+;
+
+136  
+	`decode
+(
+begš
+, 
+’d
+, 
+cod•ošt
+);
+
+137 
+	}
+}
+
+141 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+142 
+	g¡d
+::
+size_t
+ 
+Utf
+<8>::
+	$couÁ
+(
+In
+ 
+begš
+, IÀ
+’d
+)
+
+144 
+¡d
+::
+size_t
+ 
+Ëngth
+ = 0;
+
+145 
+begš
+ < 
+’d
+)
+
+147 
+begš
+ = 
+	`Ãxt
+(begš, 
+’d
+);
+
+148 ++
+Ëngth
+;
+
+151  
+Ëngth
+;
+
+152 
+	}
+}
+
+156 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+157 
+Out
+ 
+	gUtf
+<8>::
+	$äomAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+159 
+begš
+ < 
+’d
+)
+
+161 
+Ušt32
+ 
+cod•ošt
+ = 
+Utf
+<32>::
+	`decodeAnsi
+(*
+begš
+++, 
+loÿË
+);
+
+162 
+ouut
+ = 
+	`’code
+(
+cod•ošt
+, output);
+
+165  
+ouut
+;
+
+166 
+	}
+}
+
+170 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+171 
+Out
+ 
+	gUtf
+<8>::
+	$äomWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+173 
+begš
+ < 
+’d
+)
+
+175 
+Ušt32
+ 
+cod•ošt
+ = 
+Utf
+<32>::
+	`decodeWide
+(*
+begš
+++);
+
+176 
+ouut
+ = 
+	`’code
+(
+cod•ošt
+, output);
+
+179  
+ouut
+;
+
+180 
+	}
+}
+
+184 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+185 
+Out
+ 
+	gUtf
+<8>::
+	$äomL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+189 
+begš
+ < 
+’d
+)
+
+190 
+ouut
+ = 
+	`’code
+(*
+begš
+++, output);
+
+192  
+ouut
+;
+
+193 
+	}
+}
+
+197 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+198 
+Out
+ 
+	gUtf
+<8>::
+	$toAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+200 
+begš
+ < 
+’d
+)
+
+202 
+Ušt32
+ 
+cod•ošt
+;
+
+203 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+204 
+ouut
+ = 
+Utf
+<32>::
+	`’codeAnsi
+(
+cod•ošt
+, ouut, 
+»¶aûm’t
+, 
+loÿË
+);
+
+207  
+ouut
+;
+
+208 
+	}
+}
+
+212 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+213 
+Out
+ 
+	gUtf
+<8>::
+	$toWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+)
+
+215 
+begš
+ < 
+’d
+)
+
+217 
+Ušt32
+ 
+cod•ošt
+;
+
+218 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+219 
+ouut
+ = 
+Utf
+<32>::
+	`’codeWide
+(
+cod•ošt
+, ouut, 
+»¶aûm’t
+);
+
+222  
+ouut
+;
+
+223 
+	}
+}
+
+227 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+228 
+Out
+ 
+	gUtf
+<8>::
+	$toL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+)
+
+232 
+begš
+ < 
+’d
+)
+
+234 
+Ušt32
+ 
+cod•ošt
+;
+
+235 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+236 *
+ouut
+++ = 
+cod•ošt
+ < 256 ? 
+¡©ic_ÿ¡
+<>(cod•oštè: 
+»¶aûm’t
+;
+
+239  
+ouut
+;
+
+240 
+	}
+}
+
+244 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+245 
+Out
+ 
+	gUtf
+<8>::
+	$toUtf8
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+247  
+¡d
+::
+	`cİy
+(
+begš
+, 
+’d
+, 
+ouut
+);
+
+248 
+	}
+}
+
+252 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+253 
+Out
+ 
+	gUtf
+<8>::
+	$toUtf16
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+255 
+begš
+ < 
+’d
+)
+
+257 
+Ušt32
+ 
+cod•ošt
+;
+
+258 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+259 
+ouut
+ = 
+Utf
+<16>::
+	`’code
+(
+cod•ošt
+, output);
+
+262  
+ouut
+;
+
+263 
+	}
+}
+
+267 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+268 
+Out
+ 
+	gUtf
+<8>::
+	$toUtf32
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+270 
+begš
+ < 
+’d
+)
+
+272 
+Ušt32
+ 
+cod•ošt
+;
+
+273 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+274 *
+ouut
+++ = 
+cod•ošt
+;
+
+277  
+ouut
+;
+
+278 
+	}
+}
+
+282 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+283 
+In
+ 
+	gUtf
+<16>::
+	$decode
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Ušt32
+& 
+ouut
+, Ušt32 
+»¶aûm’t
+)
+
+285 
+Ušt16
+ 
+fœ¡
+ = *
+begš
+++;
+
+288 ià((
+fœ¡
+ >= 0xD800) && (first <= 0xDBFF))
+
+290 ià(
+begš
+ < 
+’d
+)
+
+292 
+Ušt32
+ 
+£cÚd
+ = *
+begš
+++;
+
+293 ià((
+£cÚd
+ >= 0xDC00) && (second <= 0xDFFF))
+
+296 
+ouut
+ = 
+¡©ic_ÿ¡
+<
+Ušt32
+>(((
+fœ¡
+ - 0xD800è<< 10è+ (
+£cÚd
+ - 0xDC00) + 0x0010000);
+
+301 
+ouut
+ = 
+»¶aûm’t
+;
+
+307 
+begš
+ = 
+’d
+;
+
+308 
+ouut
+ = 
+»¶aûm’t
+;
+
+314 
+ouut
+ = 
+fœ¡
+;
+
+317  
+begš
+;
+
+318 
+	}
+}
+
+322 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+323 
+Out
+ 
+	gUtf
+<16>::
+	$’code
+(
+Ušt32
+ 
+šput
+, 
+Out
+ 
+ouut
+, 
+Ušt16
+ 
+»¶aûm’t
+)
+
+325 ià(
+šput
+ < 0xFFFF)
+
+328 ià((
+šput
+ >= 0xD800) && (input <= 0xDFFF))
+
+331 ià(
+»¶aûm’t
+)
+
+332 *
+ouut
+++ = 
+»¶aûm’t
+;
+
+337 *
+ouut
+++ = 
+¡©ic_ÿ¡
+<
+Ušt16
+>(
+šput
+);
+
+340 ià(
+šput
+ > 0x0010FFFF)
+
+343 ià(
+»¶aûm’t
+)
+
+344 *
+ouut
+++ = 
+»¶aûm’t
+;
+
+349 
+šput
+ -= 0x0010000;
+
+350 *
+ouut
+++ = 
+¡©ic_ÿ¡
+<
+Ušt16
+>((
+šput
+ >> 10) + 0xD800);
+
+351 *
+ouut
+++ = 
+¡©ic_ÿ¡
+<
+Ušt16
+>((
+šput
+ & 0x3FFUL) + 0xDC00);
+
+354  
+ouut
+;
+
+355 
+	}
+}
+
+359 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+360 
+In
+ 
+	gUtf
+<16>::
+	$Ãxt
+(
+In
+ 
+begš
+, IÀ
+’d
+)
+
+362 
+Ušt32
+ 
+cod•ošt
+;
+
+363  
+	`decode
+(
+begš
+, 
+’d
+, 
+cod•ošt
+);
+
+364 
+	}
+}
+
+368 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+369 
+	g¡d
+::
+size_t
+ 
+Utf
+<16>::
+	$couÁ
+(
+In
+ 
+begš
+, IÀ
+’d
+)
+
+371 
+¡d
+::
+size_t
+ 
+Ëngth
+ = 0;
+
+372 
+begš
+ < 
+’d
+)
+
+374 
+begš
+ = 
+	`Ãxt
+(begš, 
+’d
+);
+
+375 ++
+Ëngth
+;
+
+378  
+Ëngth
+;
+
+379 
+	}
+}
+
+383 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+384 
+Out
+ 
+	gUtf
+<16>::
+	$äomAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+386 
+begš
+ < 
+’d
+)
+
+388 
+Ušt32
+ 
+cod•ošt
+ = 
+Utf
+<32>::
+	`decodeAnsi
+(*
+begš
+++, 
+loÿË
+);
+
+389 
+ouut
+ = 
+	`’code
+(
+cod•ošt
+, output);
+
+392  
+ouut
+;
+
+393 
+	}
+}
+
+397 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+398 
+Out
+ 
+	gUtf
+<16>::
+	$äomWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+400 
+begš
+ < 
+’d
+)
+
+402 
+Ušt32
+ 
+cod•ošt
+ = 
+Utf
+<32>::
+	`decodeWide
+(*
+begš
+++);
+
+403 
+ouut
+ = 
+	`’code
+(
+cod•ošt
+, output);
+
+406  
+ouut
+;
+
+407 
+	}
+}
+
+411 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+412 
+Out
+ 
+	gUtf
+<16>::
+	$äomL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+416  
+¡d
+::
+	`cİy
+(
+begš
+, 
+’d
+, 
+ouut
+);
+
+417 
+	}
+}
+
+421 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+422 
+Out
+ 
+	gUtf
+<16>::
+	$toAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+424 
+begš
+ < 
+’d
+)
+
+426 
+Ušt32
+ 
+cod•ošt
+;
+
+427 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+428 
+ouut
+ = 
+Utf
+<32>::
+	`’codeAnsi
+(
+cod•ošt
+, ouut, 
+»¶aûm’t
+, 
+loÿË
+);
+
+431  
+ouut
+;
+
+432 
+	}
+}
+
+436 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+437 
+Out
+ 
+	gUtf
+<16>::
+	$toWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+)
+
+439 
+begš
+ < 
+’d
+)
+
+441 
+Ušt32
+ 
+cod•ošt
+;
+
+442 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+443 
+ouut
+ = 
+Utf
+<32>::
+	`’codeWide
+(
+cod•ošt
+, ouut, 
+»¶aûm’t
+);
+
+446  
+ouut
+;
+
+447 
+	}
+}
+
+451 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+452 
+Out
+ 
+	gUtf
+<16>::
+	$toL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+)
+
+456 
+begš
+ < 
+’d
+)
+
+458 *
+ouut
+++ = *
+begš
+ < 256 ? 
+¡©ic_ÿ¡
+<>(*begšè: 
+»¶aûm’t
+;
+
+459 
+begš
+++;
+
+462  
+ouut
+;
+
+463 
+	}
+}
+
+467 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+468 
+Out
+ 
+	gUtf
+<16>::
+	$toUtf8
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+470 
+begš
+ < 
+’d
+)
+
+472 
+Ušt32
+ 
+cod•ošt
+;
+
+473 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+474 
+ouut
+ = 
+Utf
+<8>::
+	`’code
+(
+cod•ošt
+, output);
+
+477  
+ouut
+;
+
+478 
+	}
+}
+
+482 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+483 
+Out
+ 
+	gUtf
+<16>::
+	$toUtf16
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+485  
+¡d
+::
+	`cİy
+(
+begš
+, 
+’d
+, 
+ouut
+);
+
+486 
+	}
+}
+
+490 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+491 
+Out
+ 
+	gUtf
+<16>::
+	$toUtf32
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+493 
+begš
+ < 
+’d
+)
+
+495 
+Ušt32
+ 
+cod•ošt
+;
+
+496 
+begš
+ = 
+	`decode
+(begš, 
+’d
+, 
+cod•ošt
+);
+
+497 *
+ouut
+++ = 
+cod•ošt
+;
+
+500  
+ouut
+;
+
+501 
+	}
+}
+
+505 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+506 
+In
+ 
+	gUtf
+<32>::
+	$decode
+(
+In
+ 
+begš
+, IÀ , 
+Ušt32
+& 
+ouut
+, Uint32 )
+
+508 
+ouut
+ = *
+begš
+++;
+
+509  
+begš
+;
+
+510 
+	}
+}
+
+514 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+515 
+Out
+ 
+	gUtf
+<32>::
+	$’code
+(
+Ušt32
+ 
+šput
+, 
+Out
+ 
+ouut
+, Uint32 )
+
+517 *
+ouut
+++ = 
+šput
+;
+
+518  
+ouut
+;
+
+519 
+	}
+}
+
+523 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+524 
+In
+ 
+	gUtf
+<32>::
+	$Ãxt
+(
+In
+ 
+begš
+, In )
+
+526  ++
+begš
+;
+
+527 
+	}
+}
+
+531 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+532 
+	g¡d
+::
+size_t
+ 
+Utf
+<32>::
+	$couÁ
+(
+In
+ 
+begš
+, IÀ
+’d
+)
+
+534  
+begš
+ - 
+’d
+;
+
+535 
+	}
+}
+
+539 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+540 
+Out
+ 
+	gUtf
+<32>::
+	$äomAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+542 
+begš
+ < 
+’d
+)
+
+543 *
+ouut
+++ = 
+	`decodeAnsi
+(*
+begš
+++, 
+loÿË
+);
+
+545  
+ouut
+;
+
+546 
+	}
+}
+
+550 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+551 
+Out
+ 
+	gUtf
+<32>::
+	$äomWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+553 
+begš
+ < 
+’d
+)
+
+554 *
+ouut
+++ = 
+	`decodeWide
+(*
+begš
+++);
+
+556  
+ouut
+;
+
+557 
+	}
+}
+
+561 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+562 
+Out
+ 
+	gUtf
+<32>::
+	$äomL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+566  
+¡d
+::
+	`cİy
+(
+begš
+, 
+’d
+, 
+ouut
+);
+
+567 
+	}
+}
+
+571 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+572 
+Out
+ 
+	gUtf
+<32>::
+	$toAnsi
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+574 
+begš
+ < 
+’d
+)
+
+575 
+ouut
+ = 
+	`’codeAnsi
+(*
+begš
+++, ouut, 
+»¶aûm’t
+, 
+loÿË
+);
+
+577  
+ouut
+;
+
+578 
+	}
+}
+
+582 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+583 
+Out
+ 
+	gUtf
+<32>::
+	$toWide
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+)
+
+585 
+begš
+ < 
+’d
+)
+
+586 
+ouut
+ = 
+	`’codeWide
+(*
+begš
+++, ouut, 
+»¶aûm’t
+);
+
+588  
+ouut
+;
+
+589 
+	}
+}
+
+593 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+594 
+Out
+ 
+	gUtf
+<32>::
+	$toL©š1
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+)
+
+598 
+begš
+ < 
+’d
+)
+
+600 *
+ouut
+++ = *
+begš
+ < 256 ? 
+¡©ic_ÿ¡
+<>(*begšè: 
+»¶aûm’t
+;
+
+601 
+begš
+++;
+
+604  
+ouut
+;
+
+605 
+	}
+}
+
+609 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+610 
+Out
+ 
+	gUtf
+<32>::
+	$toUtf8
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+612 
+begš
+ < 
+’d
+)
+
+613 
+ouut
+ = 
+Utf
+<8>::
+	`’code
+(*
+begš
+++, output);
+
+615  
+ouut
+;
+
+616 
+	}
+}
+
+619 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+620 
+Out
+ 
+	gUtf
+<32>::
+	$toUtf16
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+622 
+begš
+ < 
+’d
+)
+
+623 
+ouut
+ = 
+Utf
+<16>::
+	`’code
+(*
+begš
+++, output);
+
+625  
+ouut
+;
+
+626 
+	}
+}
+
+630 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+,y³Çm
+	gOut
+>
+
+631 
+Out
+ 
+	gUtf
+<32>::
+	$toUtf32
+(
+In
+ 
+begš
+, IÀ
+’d
+, 
+Out
+ 
+ouut
+)
+
+633  
+¡d
+::
+	`cİy
+(
+begš
+, 
+’d
+, 
+ouut
+);
+
+634 
+	}
+}
+
+638 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+639 
+Ušt32
+ 
+	gUtf
+<32>::
+	$decodeAnsi
+(
+In
+ 
+šput
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+646 #ià
+	`defšed
+(
+SFML_SYSTEM_WINDOWS
+) && \
+
+647 (
+	`defšed
+(
+__GLIBCPP__
+è|| defšed (
+__GLIBCXX__
+)) && \
+
+648 !(
+	`defšed
+(
+__SGI_STL_PORT
+è|| defšed(
+_STLPORT_VERSION
+))
+
+650 ()
+loÿË
+;
+
+652 
+wch¬_t
+ 
+ch¬aù”
+ = 0;
+
+653 
+	`mbtowc
+(&
+ch¬aù”
+, &
+šput
+, 1);
+
+654  
+¡©ic_ÿ¡
+<
+Ušt32
+>(
+ch¬aù”
+);
+
+659 cÚ¡ 
+¡d
+::
+ùy³
+<
+wch¬_t
+>& 
+çût
+ = std::
+u£_çût
+< std::ùy³<wch¬_t> >(
+loÿË
+);
+
+662  
+¡©ic_ÿ¡
+<
+Ušt32
+>(
+çût
+.
+	`wid’
+(
+šput
+));
+
+665 
+	}
+}
+
+669 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gIn
+>
+
+670 
+Ušt32
+ 
+	gUtf
+<32>::
+	$decodeWide
+(
+In
+ 
+šput
+)
+
+678  
+šput
+;
+
+679 
+	}
+}
+
+683 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+684 
+Out
+ 
+	gUtf
+<32>::
+	$’codeAnsi
+(
+Ušt32
+ 
+cod•ošt
+, 
+Out
+ 
+ouut
+, 
+»¶aûm’t
+, cÚ¡ 
+¡d
+::
+loÿË
+&†ocale)
+
+691 #ià
+	`defšed
+(
+SFML_SYSTEM_WINDOWS
+) && \
+
+692 (
+	`defšed
+(
+__GLIBCPP__
+è|| defšed (
+__GLIBCXX__
+)) && \
+
+693 !(
+	`defšed
+(
+__SGI_STL_PORT
+è|| defšed(
+_STLPORT_VERSION
+))
+
+695 ()
+loÿË
+;
+
+697 
+ch¬aù”
+ = 0;
+
+698 ià(
+	`wùomb
+(&
+ch¬aù”
+, 
+¡©ic_ÿ¡
+<
+wch¬_t
+>(
+cod•ošt
+)) >= 0)
+
+699 *
+ouut
+++ = 
+ch¬aù”
+;
+
+700 ià(
+»¶aûm’t
+)
+
+701 *
+ouut
+++ = 
+»¶aûm’t
+;
+
+703  
+ouut
+;
+
+708 cÚ¡ 
+¡d
+::
+ùy³
+<
+wch¬_t
+>& 
+çût
+ = std::
+u£_çût
+< std::ùy³<wch¬_t> >(
+loÿË
+);
+
+711 *
+ouut
+++ = 
+çût
+.
+	`Ç¼ow
+(
+¡©ic_ÿ¡
+<
+wch¬_t
+>(
+cod•ošt
+), 
+»¶aûm’t
+);
+
+713  
+ouut
+;
+
+716 
+	}
+}
+
+720 
+	g‹m¶©e
+ <
+ty³Çme
+ 
+	gOut
+>
+
+721 
+Out
+ 
+	gUtf
+<32>::
+	$’codeWide
+(
+Ušt32
+ 
+cod•ošt
+, 
+Out
+ 
+ouut
+, 
+wch¬_t
+ 
+»¶aûm’t
+)
+
+729 (
+wch¬_t
+))
+
+733 *
+ouut
+++ = 
+¡©ic_ÿ¡
+<
+wch¬_t
+>(
+cod•ošt
+);
+
+739 ià((
+cod•ošt
+ <= 0xFFFF) && ((codepoint < 0xD800) || (codepoint > 0xDFFF)))
+
+741 *
+ouut
+++ = 
+¡©ic_ÿ¡
+<
+wch¬_t
+>(
+cod•ošt
+);
+
+743 ià(
+»¶aûm’t
+)
+
+745 *
+ouut
+++ = 
+»¶aûm’t
+;
+
+751  
+ouut
+;
+
+752 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+66
+2470
+include/myball.h
+src/myball.cpp
+/usr/include/SFML/Graphics.hpp
+/usr/include/SFML/Graphics/BlendMode.hpp
+/usr/include/SFML/Graphics/CircleShape.hpp
+/usr/include/SFML/Graphics/Color.hpp
+/usr/include/SFML/Graphics/ConvexShape.hpp
+/usr/include/SFML/Graphics/Font.hpp
+/usr/include/SFML/Graphics/Glyph.hpp
+/usr/include/SFML/Graphics/Image.hpp
+/usr/include/SFML/Graphics/RectangleShape.hpp
+/usr/include/SFML/Graphics/RenderStates.hpp
+/usr/include/SFML/Graphics/RenderTexture.hpp
+/usr/include/SFML/Graphics/RenderWindow.hpp
+/usr/include/SFML/Graphics/Shader.hpp
+/usr/include/SFML/Graphics/Shape.hpp
+/usr/include/SFML/Graphics/Sprite.hpp
+/usr/include/SFML/Graphics/Text.hpp
+/usr/include/SFML/Graphics/Texture.hpp
+/usr/include/SFML/Graphics/Transform.hpp
+/usr/include/SFML/Graphics/Vertex.hpp
+/usr/include/SFML/Graphics/VertexArray.hpp
+/usr/include/SFML/Graphics/View.hpp
+/usr/include/SFML/Window.hpp
+/usr/include/SFML/Graphics/Drawable.hpp
+/usr/include/SFML/Graphics/Export.hpp
+/usr/include/SFML/Graphics/PrimitiveType.hpp
+/usr/include/SFML/Graphics/Rect.hpp
+/usr/include/SFML/Graphics/RenderTarget.hpp
+/usr/include/SFML/Graphics/Transformable.hpp
+/usr/include/SFML/System.hpp
+/usr/include/SFML/System/NonCopyable.hpp
+/usr/include/SFML/System/String.hpp
+/usr/include/SFML/System/Vector2.hpp
+/usr/include/SFML/System/Vector3.hpp
+/usr/include/SFML/Window/Context.hpp
+/usr/include/SFML/Window/ContextSettings.hpp
+/usr/include/SFML/Window/Event.hpp
+/usr/include/SFML/Window/GlResource.hpp
+/usr/include/SFML/Window/Joystick.hpp
+/usr/include/SFML/Window/Keyboard.hpp
+/usr/include/SFML/Window/Mouse.hpp
+/usr/include/SFML/Window/VideoMode.hpp
+/usr/include/SFML/Window/Window.hpp
+/usr/include/SFML/Window/WindowStyle.hpp
+/usr/include/SFML/Config.hpp
+/usr/include/SFML/Graphics/Rect.inl
+/usr/include/SFML/System/Clock.hpp
+/usr/include/SFML/System/Err.hpp
+/usr/include/SFML/System/Export.hpp
+/usr/include/SFML/System/InputStream.hpp
+/usr/include/SFML/System/Lock.hpp
+/usr/include/SFML/System/Mutex.hpp
+/usr/include/SFML/System/Sleep.hpp
+/usr/include/SFML/System/Thread.hpp
+/usr/include/SFML/System/ThreadLocal.hpp
+/usr/include/SFML/System/ThreadLocalPtr.hpp
+/usr/include/SFML/System/Utf.hpp
+/usr/include/SFML/System/Vector2.inl
+/usr/include/SFML/System/Vector3.inl
+/usr/include/SFML/Window/Export.hpp
+/usr/include/SFML/Window/WindowHandle.hpp
+/usr/include/SFML/System/Thread.inl
+/usr/include/SFML/System/ThreadLocalPtr.inl
+/usr/include/SFML/System/Time.hpp
+/usr/include/SFML/System/Utf.inl
