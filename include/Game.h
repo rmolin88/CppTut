@@ -3,25 +3,22 @@
 
 #include <SFML/Graphics.hpp>
 
+
+class ball
+{
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
+	public:
+		sf::CircleShape shape_;
+		sf::Vector2f v2f_position_;
+		sf::Vector2f v2f_move_offset_;
 
-/* //////////////////////////////////////////////////////////////////////////*/
-/**
- * @Description:
- */
-/* ----------------------------------------------------------------------------*/
-class ball {
- public:
-  sf::CircleShape shape_;
-  sf::Vector2f v2f_position_;
-  sf::Vector2f v2f_move_offset_;
-
-  ball() {
-    shape_.setRadius(8);
-    shape_.setFillColor(sf::Color::Red);
-    shape_.setOrigin(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);  // center of screen
-  }
+	ball()
+	{
+		shape_.setRadius(8);
+		shape_.setFillColor(sf::Color::Red);
+		shape_.setOrigin(WINDOW_WIDTH/2, WINDOW_HEIGHT/2); // center of screen 
+	}
 };
 
 class Log {
@@ -60,4 +57,23 @@ class Game {
     window.setFramerateLimit(60);
   }
 };
+
+class Debug
+{
+	public:
+		FILE *pFile;
+		char err[256];
+		
+		Debug(char *pFileName)
+			: pFile(fopen(pFileName, "w+"))
+		{}
+};
+
+//Game::Game():
+	//window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Awesome Game")
+//{
+	//window.setFramerateLimit(60);
+//}
+
+//int Debug::LogEvent(char *pText);
 #endif

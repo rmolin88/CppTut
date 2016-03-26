@@ -1,17 +1,23 @@
 CC=g++
+# use the wildcard function just like wildcard
+SRC = $(wildcard ../src/*.cpp)
+# use the notdir function to strip directory from name
+# then use the other part to substiture .cpp with .o
+OBJ = $(notdir $(SRC:.cpp=.o))
 CFLAGS=-std=c++14 -c -Wall
+EXECUTABLE = TheGame
 LDFLAGS=-lsfml-graphics -lsfml-window -lsfml-system
-SOURCES=../src/Game.cpp ../src/GameFunctions.cpp
-OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=Game
+# first you the all target
+all: $(EXECUTABLE)
 
-all: $(SOURCES) $(EXECUTABLE)
-    
-$(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+# the all target calls to build the .o files
+# the including of the flags is on the objects
+$(EXECUTABLE): $(OBJ)
+	$(CC) $^ -o $(EXECUTABLE) $(LDFLAGS)
 
-.cpp.o: 
-	$(CC) $(CFLAGS) $< -o $@
+# the .o calls to build the SRC files
+$(OBJ): $(SRC)
+	$(CC) $(CFLAGS) $^ 
 
-#clean:
-	#rm -rf *.o Game
+clean:
+	rm -f $(OBJ) $(EXECUTABLE)

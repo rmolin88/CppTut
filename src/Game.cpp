@@ -25,10 +25,11 @@
 #include "../include/Game.h"
 
 int main(int argc, char const* argv[]) {
-  char buff[128];
+  //char buff[128];
   bool escKeyPressed;
   Game myGame;
 
+  // this is what goes
   try {
     while (myGame.window.isOpen()) {
       // detecting close events
@@ -50,3 +51,42 @@ int main(int argc, char const* argv[]) {
     }
   return 0;
 }
+
+//#include "../include/Game.h"
+
+//int main(int argc, char const* argv[])
+//{
+
+	//char buff[128];
+	//bool escKeyPressed;
+	//Game myGame;
+
+	//try 
+	//{
+		//while (myGame.window.isOpen()) 
+		//{
+			//// detecting close events
+			//while(myGame.window.pollEvent(myGame.event))
+			//{
+				//escKeyPressed =    ((myGame.event.type == sf::Event::KeyPressed)&
+										//(myGame.event.key.code == sf::Keyboard::Escape));
+				//if ( (myGame.event.type == sf::Event::Closed ) || (escKeyPressed) )
+					//myGame.window.close();
+			//}
+			//myGame.window.clear(sf::Color::Red);
+			//myGame.window.display();
+		//}
+	//}
+	//catch (...) 
+	//{
+		//if (myGame.pFile)
+		//{
+			//sprintf(buff, "Exception main()");
+			//fputs(buff, myGame.pFile);
+			//fclose(myGame.pFile);
+		//}
+		//return -100;
+	//}
+
+	//return 0;
+//}
