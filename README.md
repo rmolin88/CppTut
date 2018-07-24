@@ -1,2 +1,3 @@
-# Ping Pong Game
-Used for learning purposes :D
+# Cpp Exercises
+
+## [cppprogramming.com](https://www.cprogramming.com/challenge.html)
